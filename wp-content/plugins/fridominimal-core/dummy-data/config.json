@@ -1,0 +1,72 @@
+{
+    "base": {
+        "import_file_name": "Base Import",
+        "categories": [
+            "Base"
+        ],
+        "import_notice": "Basic import includes default version from our demo and a few products, blog posts and portfolio projects. It is a required minimum to see how our theme built and to be able to import additional versions or pages.",
+        "import_preview_image_url": "http://demo1.wpopal.com/fila-minimal/sample_data/screenshot.jpg",
+        "import_widget_file_url": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/widgets.json",
+        "import_customizer_file_url": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/customizer.dat",
+        "settings": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/settings.json"
+    },
+    "demos": [
+        {
+            "import_file_name": "Home 1",
+            "import_preview_image_url": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/home-1.jpg",
+            "rev_sliders": [
+                "http://demo1.wpopal.com/fila-minimal/sample_data/revsliders/Slider-home1.zip"
+            ],
+            "settings": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/settings-home-1.json"
+        },
+        {
+            "import_file_name": "Home 2",
+            "import_preview_image_url": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/home-2.jpg",
+            "rev_sliders": [
+                "http://demo1.wpopal.com/fila-minimal/sample_data/revsliders/slider-home2.zip"
+            ],
+            "settings": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/settings-home-2.json"
+        },
+        {
+            "import_file_name": "Home 3",
+            "import_preview_image_url": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/home-3.jpg",
+            "rev_sliders": [
+                "http://demo1.wpopal.com/fila-minimal/sample_data/revsliders/slider-home-3.zip"
+            ],
+            "settings": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/settings-home-3.json"
+        },
+        {
+            "import_file_name": "Home 4",
+            "import_preview_image_url": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/home-4.jpg",
+            "rev_sliders": [
+                "http://demo1.wpopal.com/fila-minimal/sample_data/revsliders/slider-home-4.zip"
+            ],
+            "settings": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/settings-home-4.json"
+        },
+        {
+            "import_file_name": "Home 5",
+            "import_preview_image_url": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/home-5.jpg",
+            "rev_sliders": [
+                "http://demo1.wpopal.com/fila-minimal/sample_data/revsliders/slider-home-5.zip"
+            ],
+            "settings": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/settings-home-5.json"
+        },
+        {
+
+            "import_file_name": "Home 6",
+            "import_preview_image_url": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/home-6.jpg",
+            "rev_sliders": [
+                "http://demo1.wpopal.com/fila-minimal/sample_data/revsliders/slider-home-6.zip"
+            ],
+            "settings": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/settings-home-6.json"
+        },
+        {
+            "import_file_name": "Home 7",
+            "import_preview_image_url": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/home-7.jpg",
+            "rev_sliders": [
+                "http://demo1.wpopal.com/fila-minimal/sample_data/revsliders/slider-home-7.zip"
+            ],
+            "settings": "http://demo1.wpopal.com/fila-minimal/sample_data/fridominimal/settings-home-7.json"
+        }
+    ]
+}

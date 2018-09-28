@@ -1,0 +1,3736 @@
+/* inject:scss */
+@media (max-width: 991px) {
+  .elementor-brand-item .elementor-brand-image {
+    margin-bottom: 40px;
+  }
+}
+
+.elementor-brand-item img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+
+.elementor-brand-item:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.elementor-bg-transform .elementor-bg {
+  will-change: transform;
+}
+
+.elementor-bg-transform-zoom-in:hover .elementor-bg,
+.elementor-bg-transform-zoom-out .elementor-bg {
+  transform: scale(1.2);
+}
+
+.elementor-bg-transform-zoom-out:hover .elementor-bg {
+  transform: scale(1);
+}
+
+.elementor-bg-transform-move-left .elementor-bg {
+  transform: scale(1.2) translateX(-8%);
+}
+
+.elementor-bg-transform-move-left:hover .elementor-bg,
+.elementor-bg-transform-move-right .elementor-bg {
+  transform: scale(1.2) translateX(8%);
+}
+
+.elementor-bg-transform-move-right:hover .elementor-bg {
+  transform: scale(1.2) translateX(-8%);
+}
+
+.elementor-bg-transform-move-up .elementor-bg {
+  transform: scale(1.2) translateY(8%);
+}
+
+.elementor-bg-transform-move-down .elementor-bg,
+.elementor-bg-transform-move-up:hover .elementor-bg {
+  transform: scale(1.2) translateY(-8%);
+}
+
+.elementor-bg-transform-move-down:hover .elementor-bg {
+  transform: scale(1.2) translateY(8%);
+}
+
+.elementor-cta,
+.elementor-widget-call-to-action .elementor-widget-container {
+  overflow: hidden;
+}
+
+.elementor-cta {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  transition: 0.5s;
+}
+
+.elementor-cta--skin-classic .elementor-cta {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.elementor-cta--skin-classic .elementor-cta__bg-wrapper {
+  position: relative;
+  min-height: 200px;
+  width: 100%;
+}
+
+.elementor-cta--skin-classic .elementor-cta__content {
+  transition: all 0.4s;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.elementor-cta--skin-classic .elementor-cta__button.elementor-button,
+.elementor-cta--skin-classic .elementor-cta__content-item,
+.elementor-cta--skin-classic .elementor-cta__content-item .elementor-icon {
+  color: #55595c;
+  border-color: #55595c;
+}
+
+.elementor-cta--skin-cover .elementor-cta {
+  display: block;
+}
+
+.elementor-cta--skin-cover .elementor-cta__bg-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.4s;
+  width: 100%;
+}
+
+.elementor-cta--skin-cover .elementor-cta__content {
+  min-height: 280px;
+}
+
+.elementor-cta--skin-cover .elementor-cta__button.elementor-button,
+.elementor-cta--skin-cover .elementor-cta__content-item,
+.elementor-cta--skin-cover .elementor-cta__content-item .elementor-icon {
+  color: #fff;
+  border-color: #fff;
+}
+
+.elementor-cta--layout-image-above .elementor-cta {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.elementor-cta--layout-image-above .elementor-cta__bg-wrapper {
+  width: 100%;
+}
+
+.elementor-cta--layout-image-left .elementor-cta,
+.elementor-cta--layout-image-right .elementor-cta {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.elementor-cta--layout-image-left .elementor-cta__bg-wrapper,
+.elementor-cta--layout-image-right .elementor-cta__bg-wrapper {
+  width: auto;
+  min-width: 50%;
+}
+
+.elementor-cta--layout-image-left .elementor-cta__content,
+.elementor-cta--layout-image-right .elementor-cta__content {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.elementor-cta--layout-image-left .elementor-cta {
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.elementor-cta--layout-image-right .elementor-cta {
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.elementor-cta__bg,
+.elementor-cta__bg-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.4s;
+}
+
+.elementor-cta__bg-wrapper {
+  z-index: 1;
+  overflow: hidden;
+}
+
+.elementor-cta__bg {
+  background-size: cover;
+  background-position: 50%;
+  z-index: 1;
+}
+
+.elementor-cta__bg-overlay {
+  z-index: 2;
+}
+
+.elementor-cta__button.elementor-button {
+  cursor: pointer;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid #fff;
+  background: transparent;
+}
+.elementor-cta__button.elementor-button:hover {
+  background: transparent;
+  text-decoration: none;
+}
+
+.elementor-cta__title {
+  font-size: 23px;
+}
+
+.elementor-cta__content {
+  z-index: 2;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  padding: 35px;
+}
+
+.elementor-cta__content,
+.elementor-cta__content-item {
+  width: 100%;
+  position: relative;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.elementor-cta__content-item {
+  margin: 0;
+}
+.elementor-cta__content-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.elementor-cta__content-item .elementor-icon {
+  color: #fff;
+}
+
+.elementor-cta--valign-top .elementor-cta__content {
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.elementor-cta--valign-middle .elementor-cta__content {
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.elementor-cta--valign-bottom .elementor-cta__content {
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.elementor-cta:hover .elementor-cta__bg-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-device-width: 1024px) {
+  .elementor-cta {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1025px) {
+  .elementor-cta--desktop-layout-image-above .elementor-cta {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .elementor-cta--desktop-layout-image-above .elementor-cta__bg-wrapper {
+    width: 100%;
+  }
+  .elementor-cta--desktop-layout-image-left .elementor-cta,
+  .elementor-cta--desktop-layout-image-right .elementor-cta {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .elementor-cta--desktop-layout-image-left .elementor-cta__bg-wrapper,
+  .elementor-cta--desktop-layout-image-right .elementor-cta__bg-wrapper {
+    width: auto;
+    min-width: 50%;
+  }
+  .elementor-cta--desktop-layout-image-left .elementor-cta__content,
+  .elementor-cta--desktop-layout-image-right .elementor-cta__content {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+  .elementor-cta--desktop-layout-image-left .elementor-cta {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .elementor-cta--desktop-layout-image-right .elementor-cta {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 1024px) {
+  .elementor-cta--tablet-layout-image-above .elementor-cta {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .elementor-cta--tablet-layout-image-above .elementor-cta__bg-wrapper {
+    width: 100%;
+  }
+  .elementor-cta--tablet-layout-image-left .elementor-cta,
+  .elementor-cta--tablet-layout-image-right .elementor-cta {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .elementor-cta--tablet-layout-image-left .elementor-cta__bg-wrapper,
+  .elementor-cta--tablet-layout-image-right .elementor-cta__bg-wrapper {
+    width: auto;
+    min-width: 50%;
+  }
+  .elementor-cta--tablet-layout-image-left .elementor-cta__content,
+  .elementor-cta--tablet-layout-image-right .elementor-cta__content {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+  .elementor-cta--tablet-layout-image-left .elementor-cta {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .elementor-cta--tablet-layout-image-right .elementor-cta {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 767px) {
+  .elementor-cta--mobile-layout-image-above .elementor-cta {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .elementor-cta--mobile-layout-image-above .elementor-cta__bg-wrapper {
+    width: 100%;
+  }
+  .elementor-cta--mobile-layout-image-left .elementor-cta,
+  .elementor-cta--mobile-layout-image-right .elementor-cta {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .elementor-cta--mobile-layout-image-left .elementor-cta__bg-wrapper,
+  .elementor-cta--mobile-layout-image-right .elementor-cta__bg-wrapper {
+    width: auto;
+    min-width: 50%;
+  }
+  .elementor-cta--mobile-layout-image-left .elementor-cta__content,
+  .elementor-cta--mobile-layout-image-right .elementor-cta__content {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+  .elementor-cta--mobile-layout-image-left .elementor-cta {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .elementor-cta--mobile-layout-image-right .elementor-cta {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+
+.elementor-ribbon {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: auto;
+  left: 0;
+  transform: rotate(-90deg);
+  width: 150px;
+  overflow: hidden;
+  height: 150px;
+}
+
+.elementor-ribbon-inner {
+  text-align: center;
+  right: 0;
+  width: 200%;
+  transform: translateY(-50%) translateX(50%) translateX(-35px) rotate(45deg);
+  margin-top: 35px;
+  font-size: 13px;
+  line-height: 2;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: #000;
+  color: #fff;
+}
+
+.elementor-ribbon.elementor-ribbon-left {
+  transform: rotate(0);
+  right: 0;
+  left: auto;
+}
+
+.elementor-ribbon.elementor-ribbon-right {
+  transform: rotate(-90deg);
+  right: auto;
+  left: 0;
+}
+
+.column-item .study-case-inner {
+  position: relative;
+  margin-bottom: 40px;
+}
+.column-item .study-case-inner .entry-category {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.column-item .study-case-inner .link-more {
+  display: none;
+}
+
+.column-item.case_study-style-1 .study-case-inner {
+  margin-bottom: 100px;
+}
+@media (max-width: 767px) {
+  .column-item.case_study-style-1 .study-case-inner {
+    margin-bottom: 40px;
+  }
+}
+.column-item.case_study-style-1 .study-case-inner:hover .entry-header {
+  transform: translateY(-5px);
+}
+.column-item.case_study-style-1 .study-case-inner .post-thumbnail {
+  box-shadow: none;
+}
+.column-item.case_study-style-1 .study-case-inner .entry-header {
+  background: #fff;
+  position: absolute;
+  bottom: -40px;
+  right: 7.1875rem;
+  left: 7.1875rem;
+  padding: 1.5625rem 1rem;
+  transition: all 0.3s ease;
+}
+@media (max-width: 767px) {
+  .column-item.case_study-style-1 .study-case-inner .entry-header {
+    position: static;
+  }
+}
+
+.column-item.case_study-style-2 .study-case-inner .entry-header {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 0 40px 35px;
+}
+@media (max-width: 1199px) {
+  .column-item.case_study-style-2 .study-case-inner .entry-header {
+    padding: 0 15px 15px;
+  }
+}
+
+.column-item.case_study-style-3 .study-case-inner > * {
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  .column-item.case_study-style-3 .study-case-inner {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .column-item.case_study-style-3 .study-case-inner > * {
+    width: 100%;
+  }
+}
+
+.column-item.case_study-style-3 .study-case-inner .post-thumbnail {
+  box-shadow: none;
+}
+
+.column-item.case_study-style-3 .study-case-inner .entry-header {
+  background: #fff;
+  padding: 0 5.625em;
+}
+@media (max-width: 1199px) {
+  .column-item.case_study-style-3 .study-case-inner .entry-header {
+    padding: 30px;
+  }
+}
+
+.column-item.case_study-style-3 .study-case-inner .entry-title {
+  margin-bottom: 23px;
+}
+
+.elementor-widget-opal-countdown.elementor-countdown--label-block .elementor-countdown-label {
+  display: block;
+  text-align: center;
+}
+
+.elementor-widget-opal-countdown .elementor-opal-countdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.elementor-widget-opal-countdown .elementor-countdown-item {
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+}
+
+.elementor-widget-counter.elementor-position-top .elementor-icon-counter {
+  text-align: center;
+}
+
+.elementor-widget-counter.elementor-position-left .elementor-counter,
+.elementor-widget-counter.elementor-position-right .elementor-counter {
+  display: flex;
+  align-items: center;
+}
+.elementor-widget-counter.elementor-position-left .elementor-counter .elementor-counter-number-prefix,
+.elementor-widget-counter.elementor-position-left .elementor-counter .elementor-counter-number-suffix,
+.elementor-widget-counter.elementor-position-right .elementor-counter .elementor-counter-number-prefix,
+.elementor-widget-counter.elementor-position-right .elementor-counter .elementor-counter-number-suffix {
+  flex-grow: 0;
+}
+
+.elementor-widget-counter.elementor-position-left .elementor-counter {
+  justify-content: flex-start;
+}
+.elementor-widget-counter.elementor-position-left .elementor-counter .elementor-counter-title {
+  text-align: right;
+}
+
+.elementor-widget-counter.elementor-position-left .elementor-icon-counter {
+  margin-left: 10px;
+}
+
+.elementor-widget-counter.elementor-position-right .elementor-icon-counter {
+  order: 2;
+  margin-right: 10px;
+}
+
+.elementor-widget-counter.elementor-position-right .elementor-counter {
+  justify-content: flex-end;
+}
+.elementor-widget-counter.elementor-position-right .elementor-counter .elementor-counter-title {
+  text-align: left;
+}
+
+.elementor-widget-divider.divider-has-underline-yes .elementor-divider-separator:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.elementor-widget-divider.divider-has-underline-yes.divider-underline-center .elementor-divider-separator:before {
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.elementor-widget-divider.divider-has-underline-yes.divider-underline-right .elementor-divider-separator:before {
+  right: auto;
+  left: 0;
+}
+
+.elementor-widget-divider .elementor-divider-separator {
+  position: relative;
+}
+.elementor-widget-divider .elementor-divider-separator:before {
+  width: 30px;
+  height: 1px;
+}
+
+.elementor-flip-box {
+  height: 280px;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+@media (max-device-width: 1024px) {
+  .elementor-flip-box {
+    cursor: pointer;
+  }
+}
+
+.elementor-flip-box__front {
+  background-color: #1abc9c;
+}
+
+.elementor-flip-box__back {
+  background-color: #4054b2;
+  display: block;
+}
+
+.elementor-flip-box__layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.elementor-flip-box__layer__overlay {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  text-align: center;
+  padding: 35px;
+}
+
+.elementor-flip-box__layer__title {
+  font-size: 21px;
+}
+
+.elementor-flip-box__layer__description {
+  font-size: 14px;
+  color: #fff;
+}
+
+.elementor-flip-box__layer__title {
+  color: #fff;
+}
+
+.elementor-flip-box__layer__description:not(:last-child) {
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.elementor-flip-box__layer__title {
+  line-height: 1;
+  font-weight: 600;
+}
+.elementor-flip-box__layer__title:not(:last-child) {
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.elementor-flip-box .elementor-icon,
+.elementor-flip-box .elementor-view-framed .elementor-icon,
+.elementor-flip-box .elementor-view-stacked .elementor-icon {
+  color: #fff;
+}
+
+.elementor-flip-box .elementor-view-framed .elementor-icon {
+  border-color: #fff;
+}
+
+.elementor-flip-box .elementor-view-stacked .elementor-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.elementor-flip-box__button.elementor-button {
+  cursor: pointer;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+}
+.elementor-flip-box__button.elementor-button:hover {
+  background: transparent;
+  text-decoration: none;
+}
+
+.elementor-flip-box__image {
+  margin: 0 0 20px;
+  display: inline-block;
+  width: 100%;
+}
+.elementor-flip-box__image img {
+  width: 50%;
+}
+
+.elementor-flip-box .elementor-icon-wrapper {
+  margin-bottom: 20px;
+}
+
+.elementor-flip-box--3d .elementor-flip-box__layer__inner {
+  transform: translateZ(90px) scale(0.91);
+}
+
+.elementor-flip-box--3d .elementor-flip-box__layer__overlay {
+  transform-style: preserve-3d;
+  transform: translateZ(0.1px);
+}
+
+.elementor-flip-box--effect-flip .elementor-flip-box {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.elementor-flip-box--effect-flip .elementor-flip-box__layer {
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.elementor-flip-box--effect-flip .elementor-flip-box__front {
+  transform: none;
+  z-index: 1;
+}
+
+.elementor-flip-box--effect-flip .elementor-flip-box:hover .elementor-flip-box__back {
+  transform: none;
+}
+
+.elementor-flip-box--effect-flip.elementor-flip-box--direction-right .elementor-flip-box__back {
+  transform: rotateX(0) rotateY(-180deg);
+}
+
+.elementor-flip-box--effect-flip.elementor-flip-box--direction-left .elementor-flip-box__back,
+.elementor-flip-box--effect-flip.elementor-flip-box--direction-right .elementor-flip-box:hover .elementor-flip-box__front {
+  transform: rotateX(0) rotateY(180deg);
+}
+
+.elementor-flip-box--effect-flip.elementor-flip-box--direction-left .elementor-flip-box:hover .elementor-flip-box__front {
+  transform: rotateX(0) rotateY(-180deg);
+}
+
+.elementor-flip-box--effect-flip.elementor-flip-box--direction-up .elementor-flip-box__back {
+  transform: rotateX(-180deg) rotateY(0);
+}
+
+.elementor-flip-box--effect-flip.elementor-flip-box--direction-down .elementor-flip-box__back,
+.elementor-flip-box--effect-flip.elementor-flip-box--direction-up .elementor-flip-box:hover .elementor-flip-box__front {
+  transform: rotateX(180deg) rotateY(0);
+}
+
+.elementor-flip-box--effect-flip.elementor-flip-box--direction-down .elementor-flip-box:hover .elementor-flip-box__front {
+  transform: rotateX(-180deg) rotateY(0);
+}
+
+.elementor-flip-box--effect-push .elementor-flip-box__front {
+  transform: none;
+}
+
+.elementor-flip-box--effect-push.elementor-flip-box--direction-right .elementor-flip-box:hover .elementor-flip-box__front {
+  transform: translateX(-100%) translateY(0);
+}
+
+.elementor-flip-box--effect-push.elementor-flip-box--direction-left .elementor-flip-box:hover .elementor-flip-box__front {
+  transform: translateX(100%) translateY(0);
+}
+
+.elementor-flip-box--effect-push.elementor-flip-box--direction-up .elementor-flip-box:hover .elementor-flip-box__front {
+  transform: translateX(0) translateY(-100%);
+}
+
+.elementor-flip-box--effect-push.elementor-flip-box--direction-down .elementor-flip-box:hover .elementor-flip-box__front {
+  transform: translateX(0) translateY(100%);
+}
+
+.elementor-flip-box--effect-push .elementor-flip-box,
+.elementor-flip-box--effect-slide .elementor-flip-box {
+  overflow: hidden;
+}
+
+.elementor-flip-box--effect-push .elementor-flip-box:hover .elementor-flip-box__back,
+.elementor-flip-box--effect-slide .elementor-flip-box:hover .elementor-flip-box__back {
+  transform: none;
+}
+
+.elementor-flip-box--effect-push.elementor-flip-box--direction-right .elementor-flip-box__back,
+.elementor-flip-box--effect-slide.elementor-flip-box--direction-right .elementor-flip-box__back {
+  transform: translateX(100%) translateY(0);
+}
+
+.elementor-flip-box--effect-push.elementor-flip-box--direction-left .elementor-flip-box__back,
+.elementor-flip-box--effect-slide.elementor-flip-box--direction-left .elementor-flip-box__back {
+  transform: translateX(-100%) translateY(0);
+}
+
+.elementor-flip-box--effect-push.elementor-flip-box--direction-up .elementor-flip-box__back,
+.elementor-flip-box--effect-slide.elementor-flip-box--direction-up .elementor-flip-box__back {
+  transform: translateX(0) translateY(100%);
+}
+
+.elementor-flip-box--effect-push.elementor-flip-box--direction-down .elementor-flip-box__back,
+.elementor-flip-box--effect-slide.elementor-flip-box--direction-down .elementor-flip-box__back {
+  transform: translateX(0) translateY(-100%);
+}
+
+.elementor-flip-box--effect-zoom-out .elementor-flip-box .elementor-flip-box__front {
+  transition: transform 0.7s, opacity 0.35s, width 0.1ms;
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+  width: 100%;
+}
+
+.elementor-flip-box--effect-zoom-out .elementor-flip-box:hover .elementor-flip-box__front {
+  width: 0;
+  opacity: 0;
+  transform: scale(0.7);
+  transition: transform 0.8s, opacity 0.7s 0.1s, width 0.1ms 0.7s;
+}
+
+.elementor-flip-box--effect-zoom-in .elementor-flip-box .elementor-flip-box__back {
+  transition: transform 0.7s, opacity 0.5s 0.2s;
+  opacity: 0;
+  transform: scale(0.7);
+}
+
+.elementor-flip-box--effect-zoom-in .elementor-flip-box:hover .elementor-flip-box__back {
+  transition: transform 0.7s, opacity 0.5s;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.elementor-flip-box--effect-fade .elementor-flip-box .elementor-flip-box__back {
+  opacity: 0;
+}
+
+.elementor-flip-box--effect-fade .elementor-flip-box:hover .elementor-flip-box__back {
+  opacity: 1;
+}
+
+.elementor-widget-flip-box.elementor-flip-box--flipped .elementor-widget-container .elementor-flip-box__front {
+  display: none;
+}
+
+.elementor-widget-flip-box.elementor-flip-box--flipped .elementor-widget-container .elementor-flip-box__back {
+  transform: none;
+  opacity: 1;
+}
+
+.mfp-zoom-in {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-zoom-in .contactform-content {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.mfp-zoom-in.mfp-ready .contactform-content {
+  opacity: 1;
+  transform: scale(1);
+}
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-zoom-in.mfp-removing .contactform-content {
+  transform: scale(0.8);
+  opacity: 0;
+}
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.widget.widget_mc4wp_form_widget {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.mc4wp-form .widget-title p {
+  font-size: 16px;
+}
+
+.mc4wp-form-fields {
+  position: relative;
+}
+.mc4wp-form-fields .input-group {
+  border-bottom: 1px solid #222;
+}
+.mc4wp-form-fields button[type="submit"],
+.mc4wp-form-fields input[type="email"],
+.mc4wp-form-fields input[type="submit"] {
+  border: 0;
+  background: transparent;
+  padding-right: 0;
+  padding-left: 0;
+}
+.mc4wp-form-fields button[type="submit"],
+.mc4wp-form-fields input[type="submit"] {
+  height: 100%;
+  color: #222;
+}
+.mc4wp-form-fields button[type="submit"]:hover,
+.mc4wp-form-fields input[type="submit"]:hover {
+  background: transparent;
+  color: #cf9147;
+}
+.mc4wp-form-fields button[type="submit"] .lable,
+.mc4wp-form-fields input[type="submit"] .lable {
+  display: none;
+}
+.mc4wp-form-fields button[type="submit"] .icon,
+.mc4wp-form-fields input[type="submit"] .icon {
+  position: relative;
+  top: 3px;
+}
+
+.style-1 .mc4wp-form-fields input[type="email"] {
+  border-color: #f1f3f7;
+  border-left: 0;
+}
+
+.style-1 .mc4wp-form-fields button[type="submit"],
+.style-1 .mc4wp-form-fields input[type="submit"] {
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+.style-1 .mc4wp-form-fields button[type="submit"] .lable,
+.style-1 .mc4wp-form-fields input[type="submit"] .lable {
+  display: block;
+  color: #000;
+  font-weight: 600;
+}
+.style-1 .mc4wp-form-fields button[type="submit"] .icon,
+.style-1 .mc4wp-form-fields input[type="submit"] .icon {
+  display: none;
+}
+
+.style-2 .mc4wp-form-fields button[type="submit"],
+.style-2 .mc4wp-form-fields input[type="submit"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent;
+  border: transparent;
+  padding-left: 1.5em;
+  z-index: 99;
+}
+
+.style-2 .mc4wp-form-fields input:-webkit-autofill + .input-group-btn button[type="submit"] .icon,
+.style-2 .mc4wp-form-fields input:-webkit-autofill + .input-group-btn input[type="submit"] .icon,
+.style-2 .mc4wp-form-fields input:autofill + .input-group-btn button[type="submit"] .icon,
+.style-2 .mc4wp-form-fields input:autofill + .input-group-btn input[type="submit"] .icon {
+  color: #000;
+}
+
+.style-3 .mc4wp-form-fields {
+  display: flex;
+}
+.style-3 .mc4wp-form-fields p {
+  position: relative;
+}
+.style-3 .mc4wp-form-fields p:first-child {
+  padding-left: 10px;
+}
+.style-3 .mc4wp-form-fields p:first-child:after {
+  font-family: FontAwesome;
+  content: "\f003";
+  position: absolute;
+  left: 25px;
+  top: 10px;
+}
+
+.style-3 .mc4wp-form-fields .input-group {
+  flex-direction: column;
+}
+
+.style-3 .mc4wp-form-fields input {
+  width: 100%;
+  border-radius: inherit !important;
+}
+
+.style-3 .mc4wp-form-fields button[type="submit"],
+.style-3 .mc4wp-form-fields input[type="submit"] {
+  margin-top: 20px;
+  margin-right: 0 !important;
+  border-radius: inherit;
+}
+.style-3 .mc4wp-form-fields button[type="submit"] .lable,
+.style-3 .mc4wp-form-fields input[type="submit"] .lable {
+  display: block;
+}
+.style-3 .mc4wp-form-fields button[type="submit"] .icon,
+.style-3 .mc4wp-form-fields input[type="submit"] .icon {
+  display: none;
+}
+
+.colors-scheme-light .mc4wp-form-fields input[type="email"] {
+  border-color: hsla(0, 0%, 100%, 0.2);
+  color: hsla(0, 0%, 100%, 0.5) !important;
+}
+.colors-scheme-light .mc4wp-form-fields input[type="email"]:focus {
+  border-color: hsla(0, 0%, 100%, 0.4) !important;
+}
+
+.elementor-widget-opal-button-contact7.elementor-align-left {
+  text-align: right;
+}
+
+.elementor-widget-opal-button-contact7.elementor-align-center {
+  text-align: center;
+}
+
+.elementor-widget-opal-button-contact7.elementor-align-right {
+  text-align: left;
+}
+
+.elementor-widget-image-box .elementor-image-box-title {
+  padding-top: 0;
+}
+
+.elementor-widget-image-box .elementor-image-box-img {
+  position: relative;
+}
+.elementor-widget-image-box .elementor-image-box-img svg {
+  display: block;
+  margin: 0 auto;
+}
+.elementor-widget-image-box .elementor-image-box-img.testabc:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed #aba5a5;
+  border-radius: 100%;
+  transform: scale(1.4);
+}
+
+[data-elementor-columns].no-gutter {
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+[data-elementor-columns].no-gutter .column-item {
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.column-item.portfolio-entries {
+  margin-bottom: 30px;
+}
+
+.elementor-nav-menu--main .elementor-nav-menu a {
+  transition: 0.4s;
+  padding: 13px 20px;
+}
+.elementor-nav-menu--main .elementor-nav-menu a.highlighted,
+.elementor-nav-menu--main .elementor-nav-menu a:focus,
+.elementor-nav-menu--main .elementor-nav-menu a:hover {
+  padding: 13px 20px;
+}
+.elementor-nav-menu--main .elementor-nav-menu a.current {
+  background: #373a3c;
+  color: #fff;
+}
+.elementor-nav-menu--main .elementor-nav-menu a.disabled {
+  background: #55595c;
+  color: #a1a6a9;
+}
+
+.elementor-nav-menu--main .elementor-nav-menu ul {
+  position: absolute;
+  width: 12em;
+  border-width: 0;
+  border-style: solid;
+  padding: 0;
+}
+
+.elementor-nav-menu--main .elementor-nav-menu span.scroll-down,
+.elementor-nav-menu--main .elementor-nav-menu span.scroll-up {
+  position: absolute;
+  display: none;
+  visibility: hidden;
+  overflow: hidden;
+  background: #fff;
+  height: 20px;
+}
+
+.elementor-nav-menu--main .elementor-nav-menu span.scroll-up-arrow {
+  top: -2px;
+}
+
+.elementor-nav-menu--main .elementor-nav-menu span.scroll-down-arrow,
+.elementor-nav-menu--main .elementor-nav-menu span.scroll-up-arrow {
+  position: absolute;
+  right: 50%;
+  margin-right: -8px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 8px;
+  border-style: dashed dashed solid;
+  border-color: transparent transparent #494c4f;
+}
+
+.elementor-nav-menu--main .elementor-nav-menu span.scroll-down-arrow {
+  top: -2px;
+  top: 6px;
+  border-style: solid dashed dashed;
+  border-color: #494c4f transparent transparent;
+}
+
+.elementor-nav-menu--layout-horizontal {
+  display: -ms-flexbox;
+  display: flex;
+}
+.elementor-nav-menu--layout-horizontal .elementor-nav-menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.elementor-nav-menu--layout-horizontal .elementor-nav-menu a {
+  white-space: nowrap;
+}
+
+.elementor-nav-menu__align-right .elementor-nav-menu {
+  margin-right: auto;
+}
+
+.elementor-nav-menu__align-right .elementor-nav-menu--layout-vertical > ul > li > a {
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.elementor-nav-menu__align-left .elementor-nav-menu {
+  margin-left: auto;
+}
+
+.elementor-nav-menu__align-left .elementor-nav-menu--layout-vertical > ul > li > a {
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.elementor-nav-menu__align-center .elementor-nav-menu {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.elementor-nav-menu__align-center .elementor-nav-menu--layout-vertical > ul > li > a {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.elementor-nav-menu__align-justify .elementor-nav-menu--layout-horizontal .elementor-nav-menu {
+  width: 100%;
+}
+.elementor-nav-menu__align-justify .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.elementor-nav-menu__align-justify .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li > a {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.elementor-widget-opal-nav-menu .elementor-widget-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.elementor-nav-menu {
+  position: relative;
+  z-index: 2;
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  -webkit-tap-highlight-color: transparent;
+}
+.elementor-nav-menu:after {
+  content: "\00a0";
+  display: block;
+  height: 0;
+  font: 0/0 serif;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+.elementor-nav-menu li,
+.elementor-nav-menu ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  -webkit-tap-highlight-color: transparent;
+}
+.elementor-nav-menu ul {
+  display: none;
+}
+.elementor-nav-menu ul ul a,
+.elementor-nav-menu ul ul a:active,
+.elementor-nav-menu ul ul a:focus,
+.elementor-nav-menu ul ul a:hover {
+  border-right: 16px solid transparent;
+}
+.elementor-nav-menu ul ul ul a,
+.elementor-nav-menu ul ul ul a:active,
+.elementor-nav-menu ul ul ul a:focus,
+.elementor-nav-menu ul ul ul a:hover {
+  border-right: 24px solid transparent;
+}
+.elementor-nav-menu ul ul ul ul a,
+.elementor-nav-menu ul ul ul ul a:active,
+.elementor-nav-menu ul ul ul ul a:focus,
+.elementor-nav-menu ul ul ul ul a:hover {
+  border-right: 32px solid transparent;
+}
+.elementor-nav-menu ul ul ul ul ul a,
+.elementor-nav-menu ul ul ul ul ul a:active,
+.elementor-nav-menu ul ul ul ul ul a:focus,
+.elementor-nav-menu ul ul ul ul ul a:hover {
+  border-right: 40px solid transparent;
+}
+.elementor-nav-menu a,
+.elementor-nav-menu li {
+  position: relative;
+}
+.elementor-nav-menu li {
+  border-width: 0;
+}
+.elementor-nav-menu a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.elementor-nav-menu a,
+.elementor-nav-menu a:focus,
+.elementor-nav-menu a:hover {
+  padding: 10px 20px;
+  line-height: 20px;
+}
+.elementor-nav-menu a.current {
+  background: #373a3c;
+  color: #fff;
+}
+.elementor-nav-menu a.disabled {
+  cursor: not-allowed;
+  color: #a1a6a9;
+}
+
+.elementor-nav-menu--indicator-none .elementor-nav-menu .elementor-item.has-submenu {
+  padding-left: 20px;
+}
+.elementor-nav-menu--indicator-none .elementor-nav-menu .elementor-item.has-submenu .sub-arrow {
+  display: none;
+}
+
+.elementor-nav-menu--indicator-plus:before {
+  font-family: Open Sans, sans-serif;
+}
+
+.elementor-nav-menu--indicator-chevron .elementor-nav-menu .sub-arrow {
+  font-size: 10px;
+}
+.elementor-nav-menu--indicator-chevron .elementor-nav-menu .sub-arrow:before {
+  content: "";
+}
+
+.elementor-nav-menu--indicator-angle .elementor-nav-menu .sub-arrow:before {
+  content: "";
+}
+
+.elementor-nav-menu--indicator-classic .elementor-nav-menu .sub-arrow:before {
+  content: "";
+}
+
+.elementor-nav-menu--indicator-plus .elementor-nav-menu .sub-arrow:before {
+  content: "+";
+}
+
+.elementor-nav-menu .sub-arrow {
+  font-family: FontAwesome;
+  font-size: 16px;
+  line-height: 1;
+  padding-right: 10px;
+}
+
+.elementor-nav-menu--dropdown .elementor-item.highlighted,
+.elementor-nav-menu--dropdown .elementor-item:focus,
+.elementor-nav-menu--dropdown .elementor-item:hover,
+.elementor-sub-item.highlighted,
+.elementor-sub-item:focus,
+.elementor-sub-item:hover {
+  background-color: #55595c;
+  color: #fff;
+}
+
+.elementor-menu-toggle {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 22px;
+  padding: 0.25em;
+  cursor: pointer;
+  border: 0 solid;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #494c4f;
+}
+.elementor-menu-toggle i:before {
+  content: "\e804";
+}
+.elementor-menu-toggle.elementor-active i:before {
+  content: "\e909";
+}
+
+.elementor-nav-menu--dropdown.elementor-nav-menu__container {
+  margin-top: 10px;
+}
+.elementor-nav-menu--dropdown.elementor-nav-menu__container .elementor-sub-item {
+  font-size: 0.85em;
+}
+
+.elementor-nav-menu--dropdown a {
+  color: #494c4f;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.elementor-nav-menu--dropdown a.current {
+  background: #373a3c;
+  color: #fff;
+}
+.elementor-nav-menu--dropdown a.disabled {
+  color: #b3b3b3;
+}
+ul.elementor-nav-menu--dropdown a,
+ul.elementor-nav-menu--dropdown a:focus,
+ul.elementor-nav-menu--dropdown a:hover {
+  text-shadow: none;
+  border-right: 8px solid transparent;
+}
+
+.elementor-nav-menu--dropdown {
+  background-color: #fff;
+  font-size: 13px;
+}
+
+.elementor-widget-opal-nav-menu:not(.elementor-nav-menu--toggle) .elementor-menu-toggle {
+  display: none;
+}
+
+.elementor-nav-menu__text-align-center .elementor-nav-menu--dropdown .elementor-nav-menu a {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.elementor-nav-menu--toggle .elementor-menu-toggle:not(.elementor-active) + .elementor-nav-menu__container {
+  display: none;
+}
+
+.elementor-nav-menu--stretch .elementor-nav-menu__container.elementor-nav-menu--dropdown {
+  position: absolute;
+  z-index: 9998;
+}
+
+@media (min-width: 768px) {
+  .elementor-nav-menu--dropdown-mobile .elementor-menu-toggle,
+  .elementor-nav-menu--dropdown-mobile .elementor-nav-menu--dropdown {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .elementor-nav-menu--dropdown-tablet .elementor-menu-toggle,
+  .elementor-nav-menu--dropdown-tablet .elementor-nav-menu--dropdown {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .elementor-nav-menu--dropdown-tablet .elementor-nav-menu--main {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .elementor-nav-menu--dropdown-mobile .elementor-nav-menu--main {
+    display: none;
+  }
+}
+
+.elementor-nav-menu--divider > ul > li:after {
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 10px;
+  content: "";
+  color: transparent;
+  left: 0;
+  top: 50%;
+  margin-top: -5px;
+}
+
+.elementor-nav-menu--divider > ul > li:last-child:after {
+  display: none;
+}
+
+#secondary .elementor-nav-menu a:before,
+.e--pointer-dot a:before {
+  content: "";
+  width: 0;
+  height: 7px;
+  margin: 0;
+  position: static;
+}
+
+#secondary .elementor-nav-menu a.elementor-item-active:before,
+#secondary .elementor-nav-menu a:hover:before,
+.e--pointer-dot a.elementor-item-active:before,
+.e--pointer-dot a:hover:before {
+  width: 7px;
+  margin-left: 10px;
+}
+
+.elementor-nav-menu--main .elementor-nav-menu > li.current-menu-parent > a {
+  color: #cf9147 !important;
+}
+.elementor-nav-menu--main .elementor-nav-menu > li.current-menu-parent > a:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  height: 1px !important;
+  width: 100% !important;
+  right: 0 !important;
+  z-index: 2;
+  display: block;
+  background-color: #cf9147 !important;
+  opacity: 1 !important;
+}
+
+.elementor-nav-menu--main .elementor-nav-menu a.elementor-sub-item.elementor-item-active {
+  background-color: #f7f8fa;
+  color: #cf9147 !important;
+}
+
+.elementor-nav-menu--main .elementor-nav-menu ul {
+  padding: 20px 0;
+}
+
+.elementor-nav-menu--main ul.elementor-nav-menu--dropdown a,
+.elementor-nav-menu--main ul.elementor-nav-menu--dropdown a:focus,
+.elementor-nav-menu--main ul.elementor-nav-menu--dropdown a:hover {
+  border-right: 0;
+  border-left: 0;
+}
+
+.elementor-widget-opal-box-overview .elementor-box-overview-wrapper .post-thumbnail .elementor-image-box-title {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  padding: 0 40px 35px;
+}
+
+.elementor-widget-opal-box-overview .elementor-box-overview-wrapper .entry-header {
+  padding: 25px 40px 20px;
+  margin-bottom: 0;
+}
+.elementor-widget-opal-box-overview .elementor-box-overview-wrapper .entry-header .elementor-image-box-description {
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+}
+.elementor-widget-opal-box-overview .elementor-box-overview-wrapper .entry-header a {
+  font-size: 12px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.elementor-widget-opal-box-overview .elementor-box-overview-wrapper .entry-header a:after {
+  content: "\f178";
+  font: normal normal normal 10px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 5px;
+}
+
+.elementor-widget-opal-metadata ul li {
+  list-style: none;
+  font-size: 11px;
+  color: #010101;
+}
+.elementor-widget-opal-metadata ul li .value {
+  font-size: 14px;
+  color: #666;
+}
+
+.elementor-widget-opal-metadata ul.vertical li {
+  padding: 7px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+.elementor-widget-opal-metadata ul.vertical li:last-child {
+  border-bottom: none;
+}
+
+.elementor-widget-opal-metadata ul.horizontal {
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .elementor-widget-opal-metadata ul.horizontal {
+    display: block;
+  }
+}
+.elementor-widget-opal-metadata ul.horizontal li {
+  clear: both;
+  width: 100%;
+  padding: 10px 0 10px 40px;
+}
+@media (max-width: 767px) {
+  .elementor-widget-opal-metadata ul.horizontal li {
+    padding: 10px 0;
+  }
+}
+.elementor-widget-opal-metadata ul.horizontal li * {
+  display: inline-block;
+  padding: 10px 0;
+}
+.elementor-widget-opal-metadata ul.horizontal li span:last-child {
+  display: block;
+  border-top: 1px solid #e9ecef;
+}
+
+.elementor-widget-opal-portfolio .elementor-portfolio__filter {
+  border: 2px solid transparent;
+  border-radius: 999px;
+  padding-right: 1.25em;
+  padding-left: 1.25em;
+}
+
+.elementor-widget-opal-portfolio .elementor-button {
+  cursor: pointer;
+}
+
+.elementor-widget-opal-portfolio .elementor-button-text:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f178";
+  padding-right: 10px;
+}
+
+.elementor-portfolio__filters {
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.elementor-portfolio__filter {
+  margin: 0;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.blog .site-content .loading .elementor-widget-opal-portfolio .wrap:after,
+.elementor-element .loading .elementor-widget-opal-portfolio .gallery:after,
+.loading .elementor-widget-opal-portfolio .blog .site-content .wrap:after,
+.loading .elementor-widget-opal-portfolio .elementor-element .gallery:after,
+.loading .elementor-widget-opal-portfolio .list-feature-box:after,
+.loading .elementor-widget-opal-portfolio .opal-archive-style-3.archive .site-main:after,
+.loading .elementor-widget-opal-portfolio .opal-archive-style-3.blog .site-main:after,
+.loading .elementor-widget-opal-portfolio .opal-archive-style-4.archive .site-main:after,
+.loading .elementor-widget-opal-portfolio .opal-archive-style-4.blog .site-main:after,
+.loading .elementor-widget-opal-portfolio .opal-canvas-filter.top .opal-canvas-filter-wrap:after,
+.loading .elementor-widget-opal-portfolio .opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .woof_redraw_zone:after,
+.loading .elementor-widget-opal-portfolio .opal-comment-form-2 .comment-form:after,
+.loading .elementor-widget-opal-portfolio .opal-comment-form-3 .comment-form:after,
+.loading .elementor-widget-opal-portfolio .opal-comment-form-4 .comment-form:after,
+.loading .elementor-widget-opal-portfolio .opal-comment-form-6 .comment-form:after,
+.loading .elementor-widget-opal-portfolio .opal-default-content-layout-2cr .site-content .wrap:after,
+.loading .elementor-widget-opal-portfolio .osf-sorting:after,
+.loading .elementor-widget-opal-portfolio .row:after,
+.loading .elementor-widget-opal-portfolio .single-product.woocommerce-single-style-4 div.product .images .woocommerce-product-gallery__wrapper:after,
+.loading .elementor-widget-opal-portfolio .single-product div.product .woocommerce-product-gallery .flex-control-thumbs:after,
+.loading .elementor-widget-opal-portfolio .single-product div.product:after,
+.loading .elementor-widget-opal-portfolio .single .gallery:after,
+.loading .elementor-widget-opal-portfolio .site-footer .widget-area:after,
+.loading .elementor-widget-opal-portfolio .widget .gallery:after,
+.loading .elementor-widget-opal-portfolio .woocommerce-account .entry-content > .woocommerce .u-columns.woocommerce-Addresses:after,
+.loading .elementor-widget-opal-portfolio .woocommerce-account .entry-content > .woocommerce:after,
+.loading .elementor-widget-opal-portfolio .woocommerce-address-fields__field-wrapper:after,
+.loading .elementor-widget-opal-portfolio .woocommerce-Addresses:after,
+.loading .elementor-widget-opal-portfolio .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper:after,
+.loading .elementor-widget-opal-portfolio .woocommerce-cart .woocommerce:after,
+.loading .elementor-widget-opal-portfolio .woocommerce-columns--addresses:after,
+.loading .elementor-widget-opal-portfolio .woocommerce-MyAccount-content form[class^="woocommerce-"]:after,
+.loading .elementor-widget-opal-portfolio .woocommerce-single-style-5.single-product .site-main > .product:after,
+.loading .elementor-widget-opal-portfolio .woocommerce .woocommerce-carousel:after,
+.loading .elementor-widget-opal-portfolio [data-elementor-columns]:after,
+.loading .elementor-widget-opal-portfolio [data-opal-columns]:after,
+.loading .elementor-widget-opal-portfolio body.archive .site-content .wrap:after,
+.loading .elementor-widget-opal-portfolio body.opal-content-layout-2cl #content .wrap:after,
+.loading .elementor-widget-opal-portfolio body.opal-content-layout-2cr #content .wrap:after,
+.loading .elementor-widget-opal-portfolio form.track_order:after,
+.loading .elementor-widget-opal-portfolio ul.products:after,
+.opal-archive-style-3.archive .loading .elementor-widget-opal-portfolio .site-main:after,
+.opal-archive-style-3.blog .loading .elementor-widget-opal-portfolio .site-main:after,
+.opal-archive-style-4.archive .loading .elementor-widget-opal-portfolio .site-main:after,
+.opal-archive-style-4.blog .loading .elementor-widget-opal-portfolio .site-main:after,
+.opal-canvas-filter.top .loading .elementor-widget-opal-portfolio .opal-canvas-filter-wrap:after,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .loading .elementor-widget-opal-portfolio .woof_redraw_zone:after,
+.opal-comment-form-2 .loading .elementor-widget-opal-portfolio .comment-form:after,
+.opal-comment-form-3 .loading .elementor-widget-opal-portfolio .comment-form:after,
+.opal-comment-form-4 .loading .elementor-widget-opal-portfolio .comment-form:after,
+.opal-comment-form-6 .loading .elementor-widget-opal-portfolio .comment-form:after,
+.opal-default-content-layout-2cr .site-content .loading .elementor-widget-opal-portfolio .wrap:after,
+.single-product .loading .elementor-widget-opal-portfolio div.product:after,
+.single-product.woocommerce-single-style-4 div.product .images .loading .elementor-widget-opal-portfolio .woocommerce-product-gallery__wrapper:after,
+.single-product div.product .woocommerce-product-gallery .loading .elementor-widget-opal-portfolio .flex-control-thumbs:after,
+.single .loading .elementor-widget-opal-portfolio .gallery:after,
+.site-footer .loading .elementor-widget-opal-portfolio .widget-area:after,
+.widget .loading .elementor-widget-opal-portfolio .gallery:after,
+.woocommerce-account .entry-content > .woocommerce .loading .elementor-widget-opal-portfolio .u-columns.woocommerce-Addresses:after,
+.woocommerce-account .loading .elementor-widget-opal-portfolio .entry-content > .woocommerce:after,
+.woocommerce-billing-fields .loading .elementor-widget-opal-portfolio .woocommerce-billing-fields__field-wrapper:after,
+.woocommerce-cart .loading .elementor-widget-opal-portfolio .woocommerce:after,
+.woocommerce-MyAccount-content .loading .elementor-widget-opal-portfolio form[class^="woocommerce-"]:after,
+.woocommerce-single-style-5.single-product .loading .elementor-widget-opal-portfolio .site-main > .product:after,
+.woocommerce .loading .elementor-widget-opal-portfolio .woocommerce-carousel:after,
+body.archive .site-content .loading .elementor-widget-opal-portfolio .wrap:after,
+body.opal-content-layout-2cl #content .loading .elementor-widget-opal-portfolio .wrap:after,
+body.opal-content-layout-2cr #content .loading .elementor-widget-opal-portfolio .wrap:after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: block;
+  vertical-align: middle;
+  border: 1px solid #bbb;
+  border-right-color: #000;
+  border-radius: 50%;
+  animation: d 0.45s infinite linear;
+  -webkit-animation: d 0.45s infinite linear;
+  margin: 30px auto;
+  right: calc(50% - 15px);
+  top: calc(50% - 15px);
+  z-index: 99;
+}
+
+.blog .site-content .loading .elementor-widget-opal-portfolio .wrap:before,
+.elementor-element .loading .elementor-widget-opal-portfolio .gallery:before,
+.loading .elementor-widget-opal-portfolio .blog .site-content .wrap:before,
+.loading .elementor-widget-opal-portfolio .elementor-element .gallery:before,
+.loading .elementor-widget-opal-portfolio .list-feature-box:before,
+.loading .elementor-widget-opal-portfolio .opal-archive-style-3.archive .site-main:before,
+.loading .elementor-widget-opal-portfolio .opal-archive-style-3.blog .site-main:before,
+.loading .elementor-widget-opal-portfolio .opal-archive-style-4.archive .site-main:before,
+.loading .elementor-widget-opal-portfolio .opal-archive-style-4.blog .site-main:before,
+.loading .elementor-widget-opal-portfolio .opal-canvas-filter.top .opal-canvas-filter-wrap:before,
+.loading .elementor-widget-opal-portfolio .opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .woof_redraw_zone:before,
+.loading .elementor-widget-opal-portfolio .opal-comment-form-2 .comment-form:before,
+.loading .elementor-widget-opal-portfolio .opal-comment-form-3 .comment-form:before,
+.loading .elementor-widget-opal-portfolio .opal-comment-form-4 .comment-form:before,
+.loading .elementor-widget-opal-portfolio .opal-comment-form-6 .comment-form:before,
+.loading .elementor-widget-opal-portfolio .opal-default-content-layout-2cr .site-content .wrap:before,
+.loading .elementor-widget-opal-portfolio .osf-sorting:before,
+.loading .elementor-widget-opal-portfolio .row:before,
+.loading .elementor-widget-opal-portfolio .single-product.woocommerce-single-style-4 div.product .images .woocommerce-product-gallery__wrapper:before,
+.loading .elementor-widget-opal-portfolio .single-product div.product .woocommerce-product-gallery .flex-control-thumbs:before,
+.loading .elementor-widget-opal-portfolio .single-product div.product:before,
+.loading .elementor-widget-opal-portfolio .single .gallery:before,
+.loading .elementor-widget-opal-portfolio .site-footer .widget-area:before,
+.loading .elementor-widget-opal-portfolio .widget .gallery:before,
+.loading .elementor-widget-opal-portfolio .woocommerce-account .entry-content > .woocommerce .u-columns.woocommerce-Addresses:before,
+.loading .elementor-widget-opal-portfolio .woocommerce-account .entry-content > .woocommerce:before,
+.loading .elementor-widget-opal-portfolio .woocommerce-address-fields__field-wrapper:before,
+.loading .elementor-widget-opal-portfolio .woocommerce-Addresses:before,
+.loading .elementor-widget-opal-portfolio .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper:before,
+.loading .elementor-widget-opal-portfolio .woocommerce-cart .woocommerce:before,
+.loading .elementor-widget-opal-portfolio .woocommerce-columns--addresses:before,
+.loading .elementor-widget-opal-portfolio .woocommerce-MyAccount-content form[class^="woocommerce-"]:before,
+.loading .elementor-widget-opal-portfolio .woocommerce-single-style-5.single-product .site-main > .product:before,
+.loading .elementor-widget-opal-portfolio .woocommerce .woocommerce-carousel:before,
+.loading .elementor-widget-opal-portfolio [data-elementor-columns]:before,
+.loading .elementor-widget-opal-portfolio [data-opal-columns]:before,
+.loading .elementor-widget-opal-portfolio body.archive .site-content .wrap:before,
+.loading .elementor-widget-opal-portfolio body.opal-content-layout-2cl #content .wrap:before,
+.loading .elementor-widget-opal-portfolio body.opal-content-layout-2cr #content .wrap:before,
+.loading .elementor-widget-opal-portfolio form.track_order:before,
+.loading .elementor-widget-opal-portfolio ul.products:before,
+.opal-archive-style-3.archive .loading .elementor-widget-opal-portfolio .site-main:before,
+.opal-archive-style-3.blog .loading .elementor-widget-opal-portfolio .site-main:before,
+.opal-archive-style-4.archive .loading .elementor-widget-opal-portfolio .site-main:before,
+.opal-archive-style-4.blog .loading .elementor-widget-opal-portfolio .site-main:before,
+.opal-canvas-filter.top .loading .elementor-widget-opal-portfolio .opal-canvas-filter-wrap:before,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .loading .elementor-widget-opal-portfolio .woof_redraw_zone:before,
+.opal-comment-form-2 .loading .elementor-widget-opal-portfolio .comment-form:before,
+.opal-comment-form-3 .loading .elementor-widget-opal-portfolio .comment-form:before,
+.opal-comment-form-4 .loading .elementor-widget-opal-portfolio .comment-form:before,
+.opal-comment-form-6 .loading .elementor-widget-opal-portfolio .comment-form:before,
+.opal-default-content-layout-2cr .site-content .loading .elementor-widget-opal-portfolio .wrap:before,
+.single-product .loading .elementor-widget-opal-portfolio div.product:before,
+.single-product.woocommerce-single-style-4 div.product .images .loading .elementor-widget-opal-portfolio .woocommerce-product-gallery__wrapper:before,
+.single-product div.product .woocommerce-product-gallery .loading .elementor-widget-opal-portfolio .flex-control-thumbs:before,
+.single .loading .elementor-widget-opal-portfolio .gallery:before,
+.site-footer .loading .elementor-widget-opal-portfolio .widget-area:before,
+.widget .loading .elementor-widget-opal-portfolio .gallery:before,
+.woocommerce-account .entry-content > .woocommerce .loading .elementor-widget-opal-portfolio .u-columns.woocommerce-Addresses:before,
+.woocommerce-account .loading .elementor-widget-opal-portfolio .entry-content > .woocommerce:before,
+.woocommerce-billing-fields .loading .elementor-widget-opal-portfolio .woocommerce-billing-fields__field-wrapper:before,
+.woocommerce-cart .loading .elementor-widget-opal-portfolio .woocommerce:before,
+.woocommerce-MyAccount-content .loading .elementor-widget-opal-portfolio form[class^="woocommerce-"]:before,
+.woocommerce-single-style-5.single-product .loading .elementor-widget-opal-portfolio .site-main > .product:before,
+.woocommerce .loading .elementor-widget-opal-portfolio .woocommerce-carousel:before,
+body.archive .site-content .loading .elementor-widget-opal-portfolio .wrap:before,
+body.opal-content-layout-2cl #content .loading .elementor-widget-opal-portfolio .wrap:before,
+body.opal-content-layout-2cr #content .loading .elementor-widget-opal-portfolio .wrap:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: calc(50% - 25px);
+  top: calc(50% + 15px);
+  z-index: 99;
+  background: #fff;
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.elementor-editor-active .elementor-widget-opal-portfolio .isotope-grid {
+  height: auto !important;
+}
+
+.elementor-editor-active .elementor-widget-opal-portfolio .elementor-button {
+  pointer-events: none;
+}
+
+.elementor-filter-left .elementor-portfolio__filters {
+  justify-content: flex-start;
+}
+
+.elementor-filter-right .elementor-portfolio__filters {
+  justify-content: flex-end;
+}
+
+article.type-portfolio {
+  text-align: center;
+  position: relative;
+}
+article.type-portfolio:hover .post-thumbnail:after {
+  opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+  filter: alpha(opacity=100);
+}
+article.type-portfolio .post-thumbnail {
+  position: relative;
+}
+article.type-portfolio .post-thumbnail:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  filter: alpha(opacity=0);
+  transition: all 0.6s ease;
+}
+article.type-portfolio .portfolio-content {
+  padding-top: 24px;
+}
+article.type-portfolio .entry-title {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+article.type-portfolio .entry-title a {
+  color: #000;
+}
+article.type-portfolio .portfolio-category a {
+  line-height: 24px;
+  display: inline-block;
+  color: #666;
+  text-transform: uppercase;
+}
+article.type-portfolio .portfolio-category a,
+article.type-portfolio .portfolio-des {
+  font-size: 11px;
+  font-size: 0.6875rem;
+}
+
+.blog .site-content .overlay.wrap,
+.elementor-element .overlay.gallery,
+.elementor-portfolio-style-overlay,
+.opal-archive-style-3.archive .overlay.site-main,
+.opal-archive-style-3.blog .overlay.site-main,
+.opal-archive-style-4.archive .overlay.site-main,
+.opal-archive-style-4.blog .overlay.site-main,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .overlay.woof_redraw_zone,
+.opal-canvas-filter.top .overlay.opal-canvas-filter-wrap,
+.opal-comment-form-2 .overlay.comment-form,
+.opal-comment-form-3 .overlay.comment-form,
+.opal-comment-form-4 .overlay.comment-form,
+.opal-comment-form-6 .overlay.comment-form,
+.opal-default-content-layout-2cr .site-content .overlay.wrap,
+.overlay.list-feature-box,
+.overlay.osf-sorting,
+.overlay.woocommerce-address-fields__field-wrapper,
+.overlay.woocommerce-Addresses,
+.overlay.woocommerce-columns--addresses,
+.overlay[data-elementor-columns],
+.overlay[data-opal-columns],
+.row.overlay,
+.single-product.woocommerce-single-style-4 div.product .images .overlay.woocommerce-product-gallery__wrapper,
+.single-product div.overlay.product,
+.single-product div.product .woocommerce-product-gallery .overlay.flex-control-thumbs,
+.single .overlay.gallery,
+.site-footer .overlay.widget-area,
+.widget .overlay.gallery,
+.woocommerce-account .entry-content > .overlay.woocommerce,
+.woocommerce-account .entry-content > .woocommerce .overlay.u-columns.woocommerce-Addresses,
+.woocommerce-billing-fields .overlay.woocommerce-billing-fields__field-wrapper,
+.woocommerce-cart .overlay.woocommerce,
+.woocommerce-MyAccount-content form.overlay[class^="woocommerce-"],
+.woocommerce-single-style-5.single-product .site-main > .overlay.product,
+.woocommerce .overlay.woocommerce-carousel,
+body.archive .site-content .overlay.wrap,
+body.opal-content-layout-2cl #content .overlay.wrap,
+body.opal-content-layout-2cr #content .overlay.wrap,
+form.overlay.track_order,
+ul.overlay.products {
+  position: relative;
+}
+.blog .site-content .overlay.wrap .portfolio-content,
+.elementor-element .overlay.gallery .portfolio-content,
+.elementor-portfolio-style-overlay .portfolio-content,
+.opal-archive-style-3.archive .overlay.site-main .portfolio-content,
+.opal-archive-style-3.blog .overlay.site-main .portfolio-content,
+.opal-archive-style-4.archive .overlay.site-main .portfolio-content,
+.opal-archive-style-4.blog .overlay.site-main .portfolio-content,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .overlay.woof_redraw_zone .portfolio-content,
+.opal-canvas-filter.top .overlay.opal-canvas-filter-wrap .portfolio-content,
+.opal-comment-form-2 .overlay.comment-form .portfolio-content,
+.opal-comment-form-3 .overlay.comment-form .portfolio-content,
+.opal-comment-form-4 .overlay.comment-form .portfolio-content,
+.opal-comment-form-6 .overlay.comment-form .portfolio-content,
+.opal-default-content-layout-2cr .site-content .overlay.wrap .portfolio-content,
+.overlay.list-feature-box .portfolio-content,
+.overlay.osf-sorting .portfolio-content,
+.overlay.woocommerce-address-fields__field-wrapper .portfolio-content,
+.overlay.woocommerce-Addresses .portfolio-content,
+.overlay.woocommerce-columns--addresses .portfolio-content,
+.overlay[data-elementor-columns] .portfolio-content,
+.overlay[data-opal-columns] .portfolio-content,
+.row.overlay .portfolio-content,
+.single-product.woocommerce-single-style-4 div.product .images .overlay.woocommerce-product-gallery__wrapper .portfolio-content,
+.single-product div.overlay.product .portfolio-content,
+.single-product div.product .woocommerce-product-gallery .overlay.flex-control-thumbs .portfolio-content,
+.single .overlay.gallery .portfolio-content,
+.site-footer .overlay.widget-area .portfolio-content,
+.widget .overlay.gallery .portfolio-content,
+.woocommerce-account .entry-content > .overlay.woocommerce .portfolio-content,
+.woocommerce-account .entry-content > .woocommerce .overlay.u-columns.woocommerce-Addresses .portfolio-content,
+.woocommerce-billing-fields .overlay.woocommerce-billing-fields__field-wrapper .portfolio-content,
+.woocommerce-cart .overlay.woocommerce .portfolio-content,
+.woocommerce-MyAccount-content form.overlay[class^="woocommerce-"] .portfolio-content,
+.woocommerce-single-style-5.single-product .site-main > .overlay.product .portfolio-content,
+.woocommerce .overlay.woocommerce-carousel .portfolio-content,
+body.archive .site-content .overlay.wrap .portfolio-content,
+body.opal-content-layout-2cl #content .overlay.wrap .portfolio-content,
+body.opal-content-layout-2cr #content .overlay.wrap .portfolio-content,
+form.overlay.track_order .portfolio-content,
+ul.overlay.products .portfolio-content {
+  background: #fff;
+  margin: 0;
+  padding: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  filter: alpha(opacity=0);
+  transition: all 0.6s ease;
+}
+.blog .site-content .overlay.wrap .entry-title,
+.blog .site-content .overlay.wrap .portfolio-category,
+.elementor-element .overlay.gallery .entry-title,
+.elementor-element .overlay.gallery .portfolio-category,
+.elementor-portfolio-style-overlay .entry-title,
+.elementor-portfolio-style-overlay .portfolio-category,
+.opal-archive-style-3.archive .overlay.site-main .entry-title,
+.opal-archive-style-3.archive .overlay.site-main .portfolio-category,
+.opal-archive-style-3.blog .overlay.site-main .entry-title,
+.opal-archive-style-3.blog .overlay.site-main .portfolio-category,
+.opal-archive-style-4.archive .overlay.site-main .entry-title,
+.opal-archive-style-4.archive .overlay.site-main .portfolio-category,
+.opal-archive-style-4.blog .overlay.site-main .entry-title,
+.opal-archive-style-4.blog .overlay.site-main .portfolio-category,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .overlay.woof_redraw_zone .entry-title,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .overlay.woof_redraw_zone .portfolio-category,
+.opal-canvas-filter.top .overlay.opal-canvas-filter-wrap .entry-title,
+.opal-canvas-filter.top .overlay.opal-canvas-filter-wrap .portfolio-category,
+.opal-comment-form-2 .overlay.comment-form .entry-title,
+.opal-comment-form-2 .overlay.comment-form .portfolio-category,
+.opal-comment-form-3 .overlay.comment-form .entry-title,
+.opal-comment-form-3 .overlay.comment-form .portfolio-category,
+.opal-comment-form-4 .overlay.comment-form .entry-title,
+.opal-comment-form-4 .overlay.comment-form .portfolio-category,
+.opal-comment-form-6 .overlay.comment-form .entry-title,
+.opal-comment-form-6 .overlay.comment-form .portfolio-category,
+.opal-default-content-layout-2cr .site-content .overlay.wrap .entry-title,
+.opal-default-content-layout-2cr .site-content .overlay.wrap .portfolio-category,
+.overlay.list-feature-box .entry-title,
+.overlay.list-feature-box .portfolio-category,
+.overlay.osf-sorting .entry-title,
+.overlay.osf-sorting .portfolio-category,
+.overlay.woocommerce-address-fields__field-wrapper .entry-title,
+.overlay.woocommerce-address-fields__field-wrapper .portfolio-category,
+.overlay.woocommerce-Addresses .entry-title,
+.overlay.woocommerce-Addresses .portfolio-category,
+.overlay.woocommerce-columns--addresses .entry-title,
+.overlay.woocommerce-columns--addresses .portfolio-category,
+.overlay[data-elementor-columns] .entry-title,
+.overlay[data-elementor-columns] .portfolio-category,
+.overlay[data-opal-columns] .entry-title,
+.overlay[data-opal-columns] .portfolio-category,
+.row.overlay .entry-title,
+.row.overlay .portfolio-category,
+.single-product.woocommerce-single-style-4 div.product .images .overlay.woocommerce-product-gallery__wrapper .entry-title,
+.single-product.woocommerce-single-style-4 div.product .images .overlay.woocommerce-product-gallery__wrapper .portfolio-category,
+.single-product div.overlay.product .entry-title,
+.single-product div.overlay.product .portfolio-category,
+.single-product div.product .woocommerce-product-gallery .overlay.flex-control-thumbs .entry-title,
+.single-product div.product .woocommerce-product-gallery .overlay.flex-control-thumbs .portfolio-category,
+.single .overlay.gallery .entry-title,
+.single .overlay.gallery .portfolio-category,
+.site-footer .overlay.widget-area .entry-title,
+.site-footer .overlay.widget-area .portfolio-category,
+.widget .overlay.gallery .entry-title,
+.widget .overlay.gallery .portfolio-category,
+.woocommerce-account .entry-content > .overlay.woocommerce .entry-title,
+.woocommerce-account .entry-content > .overlay.woocommerce .portfolio-category,
+.woocommerce-account .entry-content > .woocommerce .overlay.u-columns.woocommerce-Addresses .entry-title,
+.woocommerce-account .entry-content > .woocommerce .overlay.u-columns.woocommerce-Addresses .portfolio-category,
+.woocommerce-billing-fields .overlay.woocommerce-billing-fields__field-wrapper .entry-title,
+.woocommerce-billing-fields .overlay.woocommerce-billing-fields__field-wrapper .portfolio-category,
+.woocommerce-cart .overlay.woocommerce .entry-title,
+.woocommerce-cart .overlay.woocommerce .portfolio-category,
+.woocommerce-MyAccount-content form.overlay[class^="woocommerce-"] .entry-title,
+.woocommerce-MyAccount-content form.overlay[class^="woocommerce-"] .portfolio-category,
+.woocommerce-single-style-5.single-product .site-main > .overlay.product .entry-title,
+.woocommerce-single-style-5.single-product .site-main > .overlay.product .portfolio-category,
+.woocommerce .overlay.woocommerce-carousel .entry-title,
+.woocommerce .overlay.woocommerce-carousel .portfolio-category,
+body.archive .site-content .overlay.wrap .entry-title,
+body.archive .site-content .overlay.wrap .portfolio-category,
+body.opal-content-layout-2cl #content .overlay.wrap .entry-title,
+body.opal-content-layout-2cl #content .overlay.wrap .portfolio-category,
+body.opal-content-layout-2cr #content .overlay.wrap .entry-title,
+body.opal-content-layout-2cr #content .overlay.wrap .portfolio-category,
+form.overlay.track_order .entry-title,
+form.overlay.track_order .portfolio-category,
+ul.overlay.products .entry-title,
+ul.overlay.products .portfolio-category {
+  overflow: hidden;
+}
+.blog .site-content .overlay.wrap .entry-title a,
+.blog .site-content .overlay.wrap .portfolio-category a,
+.elementor-element .overlay.gallery .entry-title a,
+.elementor-element .overlay.gallery .portfolio-category a,
+.elementor-portfolio-style-overlay .entry-title a,
+.elementor-portfolio-style-overlay .portfolio-category a,
+.opal-archive-style-3.archive .overlay.site-main .entry-title a,
+.opal-archive-style-3.archive .overlay.site-main .portfolio-category a,
+.opal-archive-style-3.blog .overlay.site-main .entry-title a,
+.opal-archive-style-3.blog .overlay.site-main .portfolio-category a,
+.opal-archive-style-4.archive .overlay.site-main .entry-title a,
+.opal-archive-style-4.archive .overlay.site-main .portfolio-category a,
+.opal-archive-style-4.blog .overlay.site-main .entry-title a,
+.opal-archive-style-4.blog .overlay.site-main .portfolio-category a,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .overlay.woof_redraw_zone .entry-title a,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .overlay.woof_redraw_zone .portfolio-category a,
+.opal-canvas-filter.top .overlay.opal-canvas-filter-wrap .entry-title a,
+.opal-canvas-filter.top .overlay.opal-canvas-filter-wrap .portfolio-category a,
+.opal-comment-form-2 .overlay.comment-form .entry-title a,
+.opal-comment-form-2 .overlay.comment-form .portfolio-category a,
+.opal-comment-form-3 .overlay.comment-form .entry-title a,
+.opal-comment-form-3 .overlay.comment-form .portfolio-category a,
+.opal-comment-form-4 .overlay.comment-form .entry-title a,
+.opal-comment-form-4 .overlay.comment-form .portfolio-category a,
+.opal-comment-form-6 .overlay.comment-form .entry-title a,
+.opal-comment-form-6 .overlay.comment-form .portfolio-category a,
+.opal-default-content-layout-2cr .site-content .overlay.wrap .entry-title a,
+.opal-default-content-layout-2cr .site-content .overlay.wrap .portfolio-category a,
+.overlay.list-feature-box .entry-title a,
+.overlay.list-feature-box .portfolio-category a,
+.overlay.osf-sorting .entry-title a,
+.overlay.osf-sorting .portfolio-category a,
+.overlay.woocommerce-address-fields__field-wrapper .entry-title a,
+.overlay.woocommerce-address-fields__field-wrapper .portfolio-category a,
+.overlay.woocommerce-Addresses .entry-title a,
+.overlay.woocommerce-Addresses .portfolio-category a,
+.overlay.woocommerce-columns--addresses .entry-title a,
+.overlay.woocommerce-columns--addresses .portfolio-category a,
+.overlay[data-elementor-columns] .entry-title a,
+.overlay[data-elementor-columns] .portfolio-category a,
+.overlay[data-opal-columns] .entry-title a,
+.overlay[data-opal-columns] .portfolio-category a,
+.row.overlay .entry-title a,
+.row.overlay .portfolio-category a,
+.single-product.woocommerce-single-style-4 div.product .images .overlay.woocommerce-product-gallery__wrapper .entry-title a,
+.single-product.woocommerce-single-style-4 div.product .images .overlay.woocommerce-product-gallery__wrapper .portfolio-category a,
+.single-product div.overlay.product .entry-title a,
+.single-product div.overlay.product .portfolio-category a,
+.single-product div.product .woocommerce-product-gallery .overlay.flex-control-thumbs .entry-title a,
+.single-product div.product .woocommerce-product-gallery .overlay.flex-control-thumbs .portfolio-category a,
+.single .overlay.gallery .entry-title a,
+.single .overlay.gallery .portfolio-category a,
+.site-footer .overlay.widget-area .entry-title a,
+.site-footer .overlay.widget-area .portfolio-category a,
+.widget .overlay.gallery .entry-title a,
+.widget .overlay.gallery .portfolio-category a,
+.woocommerce-account .entry-content > .overlay.woocommerce .entry-title a,
+.woocommerce-account .entry-content > .overlay.woocommerce .portfolio-category a,
+.woocommerce-account .entry-content > .woocommerce .overlay.u-columns.woocommerce-Addresses .entry-title a,
+.woocommerce-account .entry-content > .woocommerce .overlay.u-columns.woocommerce-Addresses .portfolio-category a,
+.woocommerce-billing-fields .overlay.woocommerce-billing-fields__field-wrapper .entry-title a,
+.woocommerce-billing-fields .overlay.woocommerce-billing-fields__field-wrapper .portfolio-category a,
+.woocommerce-cart .overlay.woocommerce .entry-title a,
+.woocommerce-cart .overlay.woocommerce .portfolio-category a,
+.woocommerce-MyAccount-content form.overlay[class^="woocommerce-"] .entry-title a,
+.woocommerce-MyAccount-content form.overlay[class^="woocommerce-"] .portfolio-category a,
+.woocommerce-single-style-5.single-product .site-main > .overlay.product .entry-title a,
+.woocommerce-single-style-5.single-product .site-main > .overlay.product .portfolio-category a,
+.woocommerce .overlay.woocommerce-carousel .entry-title a,
+.woocommerce .overlay.woocommerce-carousel .portfolio-category a,
+body.archive .site-content .overlay.wrap .entry-title a,
+body.archive .site-content .overlay.wrap .portfolio-category a,
+body.opal-content-layout-2cl #content .overlay.wrap .entry-title a,
+body.opal-content-layout-2cl #content .overlay.wrap .portfolio-category a,
+body.opal-content-layout-2cr #content .overlay.wrap .entry-title a,
+body.opal-content-layout-2cr #content .overlay.wrap .portfolio-category a,
+form.overlay.track_order .entry-title a,
+form.overlay.track_order .portfolio-category a,
+ul.overlay.products .entry-title a,
+ul.overlay.products .portfolio-category a {
+  display: inline-block;
+  transform: translateY(100%);
+  transition: all 1s cubic-bezier(0.37, 0.31, 0.2, 0.85);
+}
+.blog .site-content .overlay.wrap .portfolio-category a,
+.elementor-element .overlay.gallery .portfolio-category a,
+.elementor-portfolio-style-overlay .portfolio-category a,
+.opal-archive-style-3.archive .overlay.site-main .portfolio-category a,
+.opal-archive-style-3.blog .overlay.site-main .portfolio-category a,
+.opal-archive-style-4.archive .overlay.site-main .portfolio-category a,
+.opal-archive-style-4.blog .overlay.site-main .portfolio-category a,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .overlay.woof_redraw_zone .portfolio-category a,
+.opal-canvas-filter.top .overlay.opal-canvas-filter-wrap .portfolio-category a,
+.opal-comment-form-2 .overlay.comment-form .portfolio-category a,
+.opal-comment-form-3 .overlay.comment-form .portfolio-category a,
+.opal-comment-form-4 .overlay.comment-form .portfolio-category a,
+.opal-comment-form-6 .overlay.comment-form .portfolio-category a,
+.opal-default-content-layout-2cr .site-content .overlay.wrap .portfolio-category a,
+.overlay.list-feature-box .portfolio-category a,
+.overlay.osf-sorting .portfolio-category a,
+.overlay.woocommerce-address-fields__field-wrapper .portfolio-category a,
+.overlay.woocommerce-Addresses .portfolio-category a,
+.overlay.woocommerce-columns--addresses .portfolio-category a,
+.overlay[data-elementor-columns] .portfolio-category a,
+.overlay[data-opal-columns] .portfolio-category a,
+.row.overlay .portfolio-category a,
+.single-product.woocommerce-single-style-4 div.product .images .overlay.woocommerce-product-gallery__wrapper .portfolio-category a,
+.single-product div.overlay.product .portfolio-category a,
+.single-product div.product .woocommerce-product-gallery .overlay.flex-control-thumbs .portfolio-category a,
+.single .overlay.gallery .portfolio-category a,
+.site-footer .overlay.widget-area .portfolio-category a,
+.widget .overlay.gallery .portfolio-category a,
+.woocommerce-account .entry-content > .overlay.woocommerce .portfolio-category a,
+.woocommerce-account .entry-content > .woocommerce .overlay.u-columns.woocommerce-Addresses .portfolio-category a,
+.woocommerce-billing-fields .overlay.woocommerce-billing-fields__field-wrapper .portfolio-category a,
+.woocommerce-cart .overlay.woocommerce .portfolio-category a,
+.woocommerce-MyAccount-content form.overlay[class^="woocommerce-"] .portfolio-category a,
+.woocommerce-single-style-5.single-product .site-main > .overlay.product .portfolio-category a,
+.woocommerce .overlay.woocommerce-carousel .portfolio-category a,
+body.archive .site-content .overlay.wrap .portfolio-category a,
+body.opal-content-layout-2cl #content .overlay.wrap .portfolio-category a,
+body.opal-content-layout-2cr #content .overlay.wrap .portfolio-category a,
+form.overlay.track_order .portfolio-category a,
+ul.overlay.products .portfolio-category a {
+  transition-delay: 0.2s;
+}
+.blog .site-content .overlay.wrap article.type-portfolio:hover .portfolio-content,
+.elementor-element .overlay.gallery article.type-portfolio:hover .portfolio-content,
+.elementor-portfolio-style-overlay article.type-portfolio:hover .portfolio-content,
+.opal-archive-style-3.archive .overlay.site-main article.type-portfolio:hover .portfolio-content,
+.opal-archive-style-3.blog .overlay.site-main article.type-portfolio:hover .portfolio-content,
+.opal-archive-style-4.archive .overlay.site-main article.type-portfolio:hover .portfolio-content,
+.opal-archive-style-4.blog .overlay.site-main article.type-portfolio:hover .portfolio-content,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .overlay.woof_redraw_zone article.type-portfolio:hover .portfolio-content,
+.opal-canvas-filter.top .overlay.opal-canvas-filter-wrap article.type-portfolio:hover .portfolio-content,
+.opal-comment-form-2 .overlay.comment-form article.type-portfolio:hover .portfolio-content,
+.opal-comment-form-3 .overlay.comment-form article.type-portfolio:hover .portfolio-content,
+.opal-comment-form-4 .overlay.comment-form article.type-portfolio:hover .portfolio-content,
+.opal-comment-form-6 .overlay.comment-form article.type-portfolio:hover .portfolio-content,
+.opal-default-content-layout-2cr .site-content .overlay.wrap article.type-portfolio:hover .portfolio-content,
+.overlay.list-feature-box article.type-portfolio:hover .portfolio-content,
+.overlay.osf-sorting article.type-portfolio:hover .portfolio-content,
+.overlay.woocommerce-address-fields__field-wrapper article.type-portfolio:hover .portfolio-content,
+.overlay.woocommerce-Addresses article.type-portfolio:hover .portfolio-content,
+.overlay.woocommerce-columns--addresses article.type-portfolio:hover .portfolio-content,
+.overlay[data-elementor-columns] article.type-portfolio:hover .portfolio-content,
+.overlay[data-opal-columns] article.type-portfolio:hover .portfolio-content,
+.row.overlay article.type-portfolio:hover .portfolio-content,
+.single-product.woocommerce-single-style-4 div.product .images .overlay.woocommerce-product-gallery__wrapper article.type-portfolio:hover .portfolio-content,
+.single-product div.overlay.product article.type-portfolio:hover .portfolio-content,
+.single-product div.product .woocommerce-product-gallery .overlay.flex-control-thumbs article.type-portfolio:hover .portfolio-content,
+.single .overlay.gallery article.type-portfolio:hover .portfolio-content,
+.site-footer .overlay.widget-area article.type-portfolio:hover .portfolio-content,
+.widget .overlay.gallery article.type-portfolio:hover .portfolio-content,
+.woocommerce-account .entry-content > .overlay.woocommerce article.type-portfolio:hover .portfolio-content,
+.woocommerce-billing-fields .overlay.woocommerce-billing-fields__field-wrapper article.type-portfolio:hover .portfolio-content,
+.woocommerce-cart .overlay.woocommerce article.type-portfolio:hover .portfolio-content,
+.woocommerce-MyAccount-content form.overlay[class^="woocommerce-"] article.type-portfolio:hover .portfolio-content,
+.woocommerce-single-style-5.single-product .site-main > .overlay.product article.type-portfolio:hover .portfolio-content,
+.woocommerce .overlay.woocommerce-carousel article.type-portfolio:hover .portfolio-content,
+body.archive .site-content .overlay.wrap article.type-portfolio:hover .portfolio-content,
+body.opal-content-layout-2cl #content .overlay.wrap article.type-portfolio:hover .portfolio-content,
+body.opal-content-layout-2cr #content .overlay.wrap article.type-portfolio:hover .portfolio-content,
+form.overlay.track_order article.type-portfolio:hover .portfolio-content,
+ul.overlay.products article.type-portfolio:hover .portfolio-content {
+  opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+  filter: alpha(opacity=100);
+}
+.blog .site-content .overlay.wrap article.type-portfolio:hover .entry-title,
+.blog .site-content .overlay.wrap article.type-portfolio:hover .portfolio-category,
+.elementor-element .overlay.gallery article.type-portfolio:hover .entry-title,
+.elementor-element .overlay.gallery article.type-portfolio:hover .portfolio-category,
+.elementor-portfolio-style-overlay article.type-portfolio:hover .entry-title,
+.elementor-portfolio-style-overlay article.type-portfolio:hover .portfolio-category,
+.opal-archive-style-3.archive .overlay.site-main article.type-portfolio:hover .entry-title,
+.opal-archive-style-3.archive .overlay.site-main article.type-portfolio:hover .portfolio-category,
+.opal-archive-style-3.blog .overlay.site-main article.type-portfolio:hover .entry-title,
+.opal-archive-style-3.blog .overlay.site-main article.type-portfolio:hover .portfolio-category,
+.opal-archive-style-4.archive .overlay.site-main article.type-portfolio:hover .entry-title,
+.opal-archive-style-4.archive .overlay.site-main article.type-portfolio:hover .portfolio-category,
+.opal-archive-style-4.blog .overlay.site-main article.type-portfolio:hover .entry-title,
+.opal-archive-style-4.blog .overlay.site-main article.type-portfolio:hover .portfolio-category,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .overlay.woof_redraw_zone article.type-portfolio:hover .entry-title,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .overlay.woof_redraw_zone article.type-portfolio:hover .portfolio-category,
+.opal-canvas-filter.top .overlay.opal-canvas-filter-wrap article.type-portfolio:hover .entry-title,
+.opal-canvas-filter.top .overlay.opal-canvas-filter-wrap article.type-portfolio:hover .portfolio-category,
+.opal-comment-form-2 .overlay.comment-form article.type-portfolio:hover .entry-title,
+.opal-comment-form-2 .overlay.comment-form article.type-portfolio:hover .portfolio-category,
+.opal-comment-form-3 .overlay.comment-form article.type-portfolio:hover .entry-title,
+.opal-comment-form-3 .overlay.comment-form article.type-portfolio:hover .portfolio-category,
+.opal-comment-form-4 .overlay.comment-form article.type-portfolio:hover .entry-title,
+.opal-comment-form-4 .overlay.comment-form article.type-portfolio:hover .portfolio-category,
+.opal-comment-form-6 .overlay.comment-form article.type-portfolio:hover .entry-title,
+.opal-comment-form-6 .overlay.comment-form article.type-portfolio:hover .portfolio-category,
+.opal-default-content-layout-2cr .site-content .overlay.wrap article.type-portfolio:hover .entry-title,
+.opal-default-content-layout-2cr .site-content .overlay.wrap article.type-portfolio:hover .portfolio-category,
+.overlay.list-feature-box article.type-portfolio:hover .entry-title,
+.overlay.list-feature-box article.type-portfolio:hover .portfolio-category,
+.overlay.osf-sorting article.type-portfolio:hover .entry-title,
+.overlay.osf-sorting article.type-portfolio:hover .portfolio-category,
+.overlay.woocommerce-address-fields__field-wrapper article.type-portfolio:hover .entry-title,
+.overlay.woocommerce-address-fields__field-wrapper article.type-portfolio:hover .portfolio-category,
+.overlay.woocommerce-Addresses article.type-portfolio:hover .entry-title,
+.overlay.woocommerce-Addresses article.type-portfolio:hover .portfolio-category,
+.overlay.woocommerce-columns--addresses article.type-portfolio:hover .entry-title,
+.overlay.woocommerce-columns--addresses article.type-portfolio:hover .portfolio-category,
+.overlay[data-elementor-columns] article.type-portfolio:hover .entry-title,
+.overlay[data-elementor-columns] article.type-portfolio:hover .portfolio-category,
+.overlay[data-opal-columns] article.type-portfolio:hover .entry-title,
+.overlay[data-opal-columns] article.type-portfolio:hover .portfolio-category,
+.row.overlay article.type-portfolio:hover .entry-title,
+.row.overlay article.type-portfolio:hover .portfolio-category,
+.single-product.woocommerce-single-style-4 div.product .images .overlay.woocommerce-product-gallery__wrapper article.type-portfolio:hover .entry-title,
+.single-product.woocommerce-single-style-4 div.product .images .overlay.woocommerce-product-gallery__wrapper article.type-portfolio:hover .portfolio-category,
+.single-product div.overlay.product article.type-portfolio:hover .entry-title,
+.single-product div.overlay.product article.type-portfolio:hover .portfolio-category,
+.single-product div.product .woocommerce-product-gallery .overlay.flex-control-thumbs article.type-portfolio:hover .entry-title,
+.single-product div.product .woocommerce-product-gallery .overlay.flex-control-thumbs article.type-portfolio:hover .portfolio-category,
+.single .overlay.gallery article.type-portfolio:hover .entry-title,
+.single .overlay.gallery article.type-portfolio:hover .portfolio-category,
+.site-footer .overlay.widget-area article.type-portfolio:hover .entry-title,
+.site-footer .overlay.widget-area article.type-portfolio:hover .portfolio-category,
+.widget .overlay.gallery article.type-portfolio:hover .entry-title,
+.widget .overlay.gallery article.type-portfolio:hover .portfolio-category,
+.woocommerce-account .entry-content > .overlay.woocommerce article.type-portfolio:hover .entry-title,
+.woocommerce-account .entry-content > .overlay.woocommerce article.type-portfolio:hover .portfolio-category,
+.woocommerce-billing-fields .overlay.woocommerce-billing-fields__field-wrapper article.type-portfolio:hover .entry-title,
+.woocommerce-billing-fields .overlay.woocommerce-billing-fields__field-wrapper article.type-portfolio:hover .portfolio-category,
+.woocommerce-cart .overlay.woocommerce article.type-portfolio:hover .entry-title,
+.woocommerce-cart .overlay.woocommerce article.type-portfolio:hover .portfolio-category,
+.woocommerce-MyAccount-content form.overlay[class^="woocommerce-"] article.type-portfolio:hover .entry-title,
+.woocommerce-MyAccount-content form.overlay[class^="woocommerce-"] article.type-portfolio:hover .portfolio-category,
+.woocommerce-single-style-5.single-product .site-main > .overlay.product article.type-portfolio:hover .entry-title,
+.woocommerce-single-style-5.single-product .site-main > .overlay.product article.type-portfolio:hover .portfolio-category,
+.woocommerce .overlay.woocommerce-carousel article.type-portfolio:hover .entry-title,
+.woocommerce .overlay.woocommerce-carousel article.type-portfolio:hover .portfolio-category,
+body.archive .site-content .overlay.wrap article.type-portfolio:hover .entry-title,
+body.archive .site-content .overlay.wrap article.type-portfolio:hover .portfolio-category,
+body.opal-content-layout-2cl #content .overlay.wrap article.type-portfolio:hover .entry-title,
+body.opal-content-layout-2cl #content .overlay.wrap article.type-portfolio:hover .portfolio-category,
+body.opal-content-layout-2cr #content .overlay.wrap article.type-portfolio:hover .entry-title,
+body.opal-content-layout-2cr #content .overlay.wrap article.type-portfolio:hover .portfolio-category,
+form.overlay.track_order article.type-portfolio:hover .entry-title,
+form.overlay.track_order article.type-portfolio:hover .portfolio-category,
+ul.overlay.products article.type-portfolio:hover .entry-title,
+ul.overlay.products article.type-portfolio:hover .portfolio-category {
+  overflow: hidden;
+}
+.blog .site-content .overlay.wrap article.type-portfolio:hover .entry-title a,
+.blog .site-content .overlay.wrap article.type-portfolio:hover .portfolio-category a,
+.elementor-element .overlay.gallery article.type-portfolio:hover .entry-title a,
+.elementor-element .overlay.gallery article.type-portfolio:hover .portfolio-category a,
+.elementor-portfolio-style-overlay article.type-portfolio:hover .entry-title a,
+.elementor-portfolio-style-overlay article.type-portfolio:hover .portfolio-category a,
+.opal-archive-style-3.archive .overlay.site-main article.type-portfolio:hover .entry-title a,
+.opal-archive-style-3.archive .overlay.site-main article.type-portfolio:hover .portfolio-category a,
+.opal-archive-style-3.blog .overlay.site-main article.type-portfolio:hover .entry-title a,
+.opal-archive-style-3.blog .overlay.site-main article.type-portfolio:hover .portfolio-category a,
+.opal-archive-style-4.archive .overlay.site-main article.type-portfolio:hover .entry-title a,
+.opal-archive-style-4.archive .overlay.site-main article.type-portfolio:hover .portfolio-category a,
+.opal-archive-style-4.blog .overlay.site-main article.type-portfolio:hover .entry-title a,
+.opal-archive-style-4.blog .overlay.site-main article.type-portfolio:hover .portfolio-category a,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .overlay.woof_redraw_zone article.type-portfolio:hover .entry-title a,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .overlay.woof_redraw_zone article.type-portfolio:hover .portfolio-category a,
+.opal-canvas-filter.top .overlay.opal-canvas-filter-wrap article.type-portfolio:hover .entry-title a,
+.opal-canvas-filter.top .overlay.opal-canvas-filter-wrap article.type-portfolio:hover .portfolio-category a,
+.opal-comment-form-2 .overlay.comment-form article.type-portfolio:hover .entry-title a,
+.opal-comment-form-2 .overlay.comment-form article.type-portfolio:hover .portfolio-category a,
+.opal-comment-form-3 .overlay.comment-form article.type-portfolio:hover .entry-title a,
+.opal-comment-form-3 .overlay.comment-form article.type-portfolio:hover .portfolio-category a,
+.opal-comment-form-4 .overlay.comment-form article.type-portfolio:hover .entry-title a,
+.opal-comment-form-4 .overlay.comment-form article.type-portfolio:hover .portfolio-category a,
+.opal-comment-form-6 .overlay.comment-form article.type-portfolio:hover .entry-title a,
+.opal-comment-form-6 .overlay.comment-form article.type-portfolio:hover .portfolio-category a,
+.opal-default-content-layout-2cr .site-content .overlay.wrap article.type-portfolio:hover .entry-title a,
+.opal-default-content-layout-2cr .site-content .overlay.wrap article.type-portfolio:hover .portfolio-category a,
+.overlay.list-feature-box article.type-portfolio:hover .entry-title a,
+.overlay.list-feature-box article.type-portfolio:hover .portfolio-category a,
+.overlay.osf-sorting article.type-portfolio:hover .entry-title a,
+.overlay.osf-sorting article.type-portfolio:hover .portfolio-category a,
+.overlay.woocommerce-address-fields__field-wrapper article.type-portfolio:hover .entry-title a,
+.overlay.woocommerce-address-fields__field-wrapper article.type-portfolio:hover .portfolio-category a,
+.overlay.woocommerce-Addresses article.type-portfolio:hover .entry-title a,
+.overlay.woocommerce-Addresses article.type-portfolio:hover .portfolio-category a,
+.overlay.woocommerce-columns--addresses article.type-portfolio:hover .entry-title a,
+.overlay.woocommerce-columns--addresses article.type-portfolio:hover .portfolio-category a,
+.overlay[data-elementor-columns] article.type-portfolio:hover .entry-title a,
+.overlay[data-elementor-columns] article.type-portfolio:hover .portfolio-category a,
+.overlay[data-opal-columns] article.type-portfolio:hover .entry-title a,
+.overlay[data-opal-columns] article.type-portfolio:hover .portfolio-category a,
+.row.overlay article.type-portfolio:hover .entry-title a,
+.row.overlay article.type-portfolio:hover .portfolio-category a,
+.single-product.woocommerce-single-style-4 div.product .images .overlay.woocommerce-product-gallery__wrapper article.type-portfolio:hover .entry-title a,
+.single-product.woocommerce-single-style-4 div.product .images .overlay.woocommerce-product-gallery__wrapper article.type-portfolio:hover .portfolio-category a,
+.single-product div.overlay.product article.type-portfolio:hover .entry-title a,
+.single-product div.overlay.product article.type-portfolio:hover .portfolio-category a,
+.single-product div.product .woocommerce-product-gallery .overlay.flex-control-thumbs article.type-portfolio:hover .entry-title a,
+.single-product div.product .woocommerce-product-gallery .overlay.flex-control-thumbs article.type-portfolio:hover .portfolio-category a,
+.single .overlay.gallery article.type-portfolio:hover .entry-title a,
+.single .overlay.gallery article.type-portfolio:hover .portfolio-category a,
+.site-footer .overlay.widget-area article.type-portfolio:hover .entry-title a,
+.site-footer .overlay.widget-area article.type-portfolio:hover .portfolio-category a,
+.widget .overlay.gallery article.type-portfolio:hover .entry-title a,
+.widget .overlay.gallery article.type-portfolio:hover .portfolio-category a,
+.woocommerce-account .entry-content > .overlay.woocommerce article.type-portfolio:hover .entry-title a,
+.woocommerce-account .entry-content > .overlay.woocommerce article.type-portfolio:hover .portfolio-category a,
+.woocommerce-billing-fields .overlay.woocommerce-billing-fields__field-wrapper article.type-portfolio:hover .entry-title a,
+.woocommerce-billing-fields .overlay.woocommerce-billing-fields__field-wrapper article.type-portfolio:hover .portfolio-category a,
+.woocommerce-cart .overlay.woocommerce article.type-portfolio:hover .entry-title a,
+.woocommerce-cart .overlay.woocommerce article.type-portfolio:hover .portfolio-category a,
+.woocommerce-MyAccount-content form.overlay[class^="woocommerce-"] article.type-portfolio:hover .entry-title a,
+.woocommerce-MyAccount-content form.overlay[class^="woocommerce-"] article.type-portfolio:hover .portfolio-category a,
+.woocommerce-single-style-5.single-product .site-main > .overlay.product article.type-portfolio:hover .entry-title a,
+.woocommerce-single-style-5.single-product .site-main > .overlay.product article.type-portfolio:hover .portfolio-category a,
+.woocommerce .overlay.woocommerce-carousel article.type-portfolio:hover .entry-title a,
+.woocommerce .overlay.woocommerce-carousel article.type-portfolio:hover .portfolio-category a,
+body.archive .site-content .overlay.wrap article.type-portfolio:hover .entry-title a,
+body.archive .site-content .overlay.wrap article.type-portfolio:hover .portfolio-category a,
+body.opal-content-layout-2cl #content .overlay.wrap article.type-portfolio:hover .entry-title a,
+body.opal-content-layout-2cl #content .overlay.wrap article.type-portfolio:hover .portfolio-category a,
+body.opal-content-layout-2cr #content .overlay.wrap article.type-portfolio:hover .entry-title a,
+body.opal-content-layout-2cr #content .overlay.wrap article.type-portfolio:hover .portfolio-category a,
+form.overlay.track_order article.type-portfolio:hover .entry-title a,
+form.overlay.track_order article.type-portfolio:hover .portfolio-category a,
+ul.overlay.products article.type-portfolio:hover .entry-title a,
+ul.overlay.products article.type-portfolio:hover .portfolio-category a {
+  transform: translateY(0);
+}
+
+.blog .site-content .default.wrap article.type-portfolio,
+.default.list-feature-box article.type-portfolio,
+.default.osf-sorting article.type-portfolio,
+.default.woocommerce-address-fields__field-wrapper article.type-portfolio,
+.default.woocommerce-Addresses article.type-portfolio,
+.default.woocommerce-columns--addresses article.type-portfolio,
+.default[data-elementor-columns] article.type-portfolio,
+.default[data-opal-columns] article.type-portfolio,
+.elementor-element .default.gallery article.type-portfolio,
+.opal-archive-style-3.archive .default.site-main article.type-portfolio,
+.opal-archive-style-3.blog .default.site-main article.type-portfolio,
+.opal-archive-style-4.archive .default.site-main article.type-portfolio,
+.opal-archive-style-4.blog .default.site-main article.type-portfolio,
+.opal-canvas-filter.top .default.opal-canvas-filter-wrap article.type-portfolio,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .default.woof_redraw_zone article.type-portfolio,
+.opal-comment-form-2 .default.comment-form article.type-portfolio,
+.opal-comment-form-3 .default.comment-form article.type-portfolio,
+.opal-comment-form-4 .default.comment-form article.type-portfolio,
+.opal-comment-form-6 .default.comment-form article.type-portfolio,
+.opal-default-content-layout-2cr .site-content .default.wrap article.type-portfolio,
+.row.default article.type-portfolio,
+.single-product.woocommerce-single-style-4 div.product .images .default.woocommerce-product-gallery__wrapper article.type-portfolio,
+.single-product div.default.product article.type-portfolio,
+.single-product div.product .woocommerce-product-gallery .default.flex-control-thumbs article.type-portfolio,
+.single .default.gallery article.type-portfolio,
+.site-footer .default.widget-area article.type-portfolio,
+.widget .default.gallery article.type-portfolio,
+.woocommerce-account .entry-content > .default.woocommerce article.type-portfolio,
+.woocommerce-account .entry-content > .woocommerce .default.u-columns.woocommerce-Addresses article.type-portfolio,
+.woocommerce-billing-fields .default.woocommerce-billing-fields__field-wrapper article.type-portfolio,
+.woocommerce-cart .default.woocommerce article.type-portfolio,
+.woocommerce-MyAccount-content form.default[class^="woocommerce-"] article.type-portfolio,
+.woocommerce-single-style-5.single-product .site-main > .default.product article.type-portfolio,
+.woocommerce .default.woocommerce-carousel article.type-portfolio,
+body.archive .site-content .default.wrap article.type-portfolio,
+body.opal-content-layout-2cl #content .default.wrap article.type-portfolio,
+body.opal-content-layout-2cr #content .default.wrap article.type-portfolio,
+form.default.track_order article.type-portfolio,
+ul.default.products article.type-portfolio {
+  margin-bottom: 40px;
+}
+
+.blog .site-content .overlay.wrap,
+.elementor-element .overlay.gallery,
+.opal-archive-style-3.archive .overlay.site-main,
+.opal-archive-style-3.blog .overlay.site-main,
+.opal-archive-style-4.archive .overlay.site-main,
+.opal-archive-style-4.blog .overlay.site-main,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .overlay.woof_redraw_zone,
+.opal-canvas-filter.top .overlay.opal-canvas-filter-wrap,
+.opal-comment-form-2 .overlay.comment-form,
+.opal-comment-form-3 .overlay.comment-form,
+.opal-comment-form-4 .overlay.comment-form,
+.opal-comment-form-6 .overlay.comment-form,
+.opal-default-content-layout-2cr .site-content .overlay.wrap,
+.overlay.list-feature-box,
+.overlay.osf-sorting,
+.overlay.woocommerce-address-fields__field-wrapper,
+.overlay.woocommerce-Addresses,
+.overlay.woocommerce-columns--addresses,
+.overlay[data-elementor-columns],
+.overlay[data-opal-columns],
+.row.overlay,
+.single-product.woocommerce-single-style-4 div.product .images .overlay.woocommerce-product-gallery__wrapper,
+.single-product div.overlay.product,
+.single-product div.product .woocommerce-product-gallery .overlay.flex-control-thumbs,
+.single .overlay.gallery,
+.site-footer .overlay.widget-area,
+.widget .overlay.gallery,
+.woocommerce-account .entry-content > .overlay.woocommerce,
+.woocommerce-account .entry-content > .woocommerce .overlay.u-columns.woocommerce-Addresses,
+.woocommerce-billing-fields .overlay.woocommerce-billing-fields__field-wrapper,
+.woocommerce-cart .overlay.woocommerce,
+.woocommerce-MyAccount-content form.overlay[class^="woocommerce-"],
+.woocommerce-single-style-5.single-product .site-main > .overlay.product,
+.woocommerce .overlay.woocommerce-carousel,
+body.archive .site-content .overlay.wrap,
+body.opal-content-layout-2cl #content .overlay.wrap,
+body.opal-content-layout-2cr #content .overlay.wrap,
+form.overlay.track_order,
+ul.overlay.products {
+  padding: 0 15px;
+}
+.blog .site-content body.archive .overlay.wrap article.type-portfolio,
+.elementor-element body.archive .overlay.gallery article.type-portfolio,
+.opal-archive-style-3.archive body.archive .overlay.site-main article.type-portfolio,
+.opal-archive-style-3.blog body.archive .overlay.site-main article.type-portfolio,
+.opal-archive-style-4.archive body.archive .overlay.site-main article.type-portfolio,
+.opal-archive-style-4.blog body.archive .overlay.site-main article.type-portfolio,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget body.archive .overlay.woof_redraw_zone article.type-portfolio,
+.opal-canvas-filter.top body.archive .overlay.opal-canvas-filter-wrap article.type-portfolio,
+.opal-comment-form-2 body.archive .overlay.comment-form article.type-portfolio,
+.opal-comment-form-3 body.archive .overlay.comment-form article.type-portfolio,
+.opal-comment-form-4 body.archive .overlay.comment-form article.type-portfolio,
+.opal-comment-form-6 body.archive .overlay.comment-form article.type-portfolio,
+.opal-default-content-layout-2cr .site-content body.archive .overlay.wrap article.type-portfolio,
+.single-product.woocommerce-single-style-4 div.product .images body.archive .overlay.woocommerce-product-gallery__wrapper article.type-portfolio,
+.single-product body.archive div.overlay.product article.type-portfolio,
+.single-product div.product .woocommerce-product-gallery body.archive .overlay.flex-control-thumbs article.type-portfolio,
+.single body.archive .overlay.gallery article.type-portfolio,
+.site-footer body.archive .overlay.widget-area article.type-portfolio,
+.widget body.archive .overlay.gallery article.type-portfolio,
+.woocommerce-account .entry-content > .woocommerce body.archive .overlay.u-columns.woocommerce-Addresses article.type-portfolio,
+.woocommerce-account body.archive .entry-content > .overlay.woocommerce article.type-portfolio,
+.woocommerce-billing-fields body.archive .overlay.woocommerce-billing-fields__field-wrapper article.type-portfolio,
+.woocommerce-cart body.archive .overlay.woocommerce article.type-portfolio,
+.woocommerce-MyAccount-content body.archive form.overlay[class^="woocommerce-"] article.type-portfolio,
+.woocommerce-single-style-5.single-product body.archive .site-main > .overlay.product article.type-portfolio,
+.woocommerce body.archive .overlay.woocommerce-carousel article.type-portfolio,
+body.archive .elementor-element .overlay.gallery article.type-portfolio,
+body.archive .opal-archive-style-3.archive .overlay.site-main article.type-portfolio,
+body.archive .opal-archive-style-3.blog .overlay.site-main article.type-portfolio,
+body.archive .opal-archive-style-4.archive .overlay.site-main article.type-portfolio,
+body.archive .opal-archive-style-4.blog .overlay.site-main article.type-portfolio,
+body.archive .opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .overlay.woof_redraw_zone article.type-portfolio,
+body.archive .opal-canvas-filter.top .overlay.opal-canvas-filter-wrap article.type-portfolio,
+body.archive .opal-comment-form-2 .overlay.comment-form article.type-portfolio,
+body.archive .opal-comment-form-3 .overlay.comment-form article.type-portfolio,
+body.archive .opal-comment-form-4 .overlay.comment-form article.type-portfolio,
+body.archive .opal-comment-form-6 .overlay.comment-form article.type-portfolio,
+body.archive .overlay.list-feature-box article.type-portfolio,
+body.archive .overlay.osf-sorting article.type-portfolio,
+body.archive .overlay.woocommerce-address-fields__field-wrapper article.type-portfolio,
+body.archive .overlay.woocommerce-Addresses article.type-portfolio,
+body.archive .overlay.woocommerce-columns--addresses article.type-portfolio,
+body.archive .overlay[data-elementor-columns] article.type-portfolio,
+body.archive .overlay[data-opal-columns] article.type-portfolio,
+body.archive .row.overlay article.type-portfolio,
+body.archive .single-product.woocommerce-single-style-4 div.product .images .overlay.woocommerce-product-gallery__wrapper article.type-portfolio,
+body.archive .single-product div.overlay.product article.type-portfolio,
+body.archive .single-product div.product .woocommerce-product-gallery .overlay.flex-control-thumbs article.type-portfolio,
+body.archive .single .overlay.gallery article.type-portfolio,
+body.archive .site-content .overlay.wrap article.type-portfolio,
+body.archive .site-footer .overlay.widget-area article.type-portfolio,
+body.archive .widget .overlay.gallery article.type-portfolio,
+body.archive .woocommerce-account .entry-content > .overlay.woocommerce article.type-portfolio,
+body.archive .woocommerce-account .entry-content > .woocommerce .overlay.u-columns.woocommerce-Addresses article.type-portfolio,
+body.archive .woocommerce-billing-fields .overlay.woocommerce-billing-fields__field-wrapper article.type-portfolio,
+body.archive .woocommerce-cart .overlay.woocommerce article.type-portfolio,
+body.archive .woocommerce-MyAccount-content form.overlay[class^="woocommerce-"] article.type-portfolio,
+body.archive .woocommerce-single-style-5.single-product .site-main > .overlay.product article.type-portfolio,
+body.archive .woocommerce .overlay.woocommerce-carousel article.type-portfolio,
+body.archive body.opal-content-layout-2cl #content .overlay.wrap article.type-portfolio,
+body.archive body.opal-content-layout-2cr #content .overlay.wrap article.type-portfolio,
+body.archive form.overlay.track_order article.type-portfolio,
+body.archive ul.overlay.products article.type-portfolio,
+body.opal-content-layout-2cl #content body.archive .overlay.wrap article.type-portfolio,
+body.opal-content-layout-2cr #content body.archive .overlay.wrap article.type-portfolio {
+  padding-right: 0;
+  padding-left: 0;
+  align-self: end;
+}
+
+.column-item .post-inner {
+  position: relative;
+  margin-bottom: 120px;
+}
+.column-item .post-inner .entry-header {
+  margin-top: 25px;
+}
+.column-item .post-inner .entry-category {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.column-item .post-inner .entry-title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin: 15px 0 35px;
+}
+.column-item .post-inner .entry-title a {
+  color: #000;
+  transition: none;
+}
+.column-item .post-inner .post-excerpt {
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+.column-item .post-inner .post-author {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding-top: 44px;
+}
+.column-item .post-inner .post-author:before {
+  position: absolute;
+  content: "";
+  background: #cf9147;
+  top: 22px;
+  right: 0;
+  width: 30px;
+  height: 1px;
+  z-index: 0;
+}
+.column-item .post-inner .link-more {
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+.column-item .post-inner .link-more a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+.column-item .post-inner .link-more a:before {
+  position: absolute;
+  content: "";
+  background: #cf9147;
+  bottom: -5px;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  z-index: 0;
+}
+.column-item .post-inner .link-more a:hover {
+  color: #000;
+}
+.column-item .post-inner .link-more a:hover:before {
+  background: #000;
+}
+.column-item .post-inner .post-date {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #888;
+}
+.column-item .post-inner .post-date span {
+  margin-left: 5px;
+}
+
+.column-item.post-style-3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.column-item.post-style-3 a {
+  transition: none;
+}
+.column-item.post-style-3:first-child:after {
+  background: #f7f7f7;
+}
+.column-item.post-style-3 .post-inner {
+  margin-bottom: 40px;
+  padding: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.column-item.post-home-create * {
+  font-weight: 400;
+}
+
+.column-item.post-home-create .post-inner {
+  padding: 40px 30px;
+  border: 1px solid #e9ecef;
+}
+.column-item.post-home-create .post-inner .post-excerpt {
+  line-height: 24px;
+}
+
+.column-item.post-style-2 {
+  padding-left: 20px;
+}
+@media (max-width: 991px) {
+  .column-item.post-style-2 {
+    padding-left: 0;
+  }
+}
+.column-item.post-style-2 .post-inner {
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .column-item.post-style-2 .post-inner {
+    display: block;
+  }
+}
+.column-item.post-style-2 .post-inner > * {
+  width: calc(50% - 20px);
+}
+@media (max-width: 767px) {
+  .column-item.post-style-2 .post-inner > * {
+    width: 100%;
+  }
+}
+.column-item.post-style-2 .entry-header {
+  padding: 0;
+  margin: 0;
+}
+
+[data-elementor-columns="1"] .post-style-3:nth-child(n + 2) {
+  border-top: 1px solid #e9ecef;
+}
+
+[data-elementor-columns="1"] .post-style-3:not(:nth-child(1n)) {
+  border-left: 1px solid #e9ecef;
+}
+
+[data-elementor-columns="2"] .post-style-3:nth-child(n + 3) {
+  border-top: 1px solid #e9ecef;
+}
+
+[data-elementor-columns="2"] .post-style-3:not(:nth-child(2n)) {
+  border-left: 1px solid #e9ecef;
+}
+
+[data-elementor-columns="3"] .post-style-3:nth-child(n + 4) {
+  border-top: 1px solid #e9ecef;
+}
+
+[data-elementor-columns="3"] .post-style-3:not(:nth-child(3n)) {
+  border-left: 1px solid #e9ecef;
+}
+
+[data-elementor-columns="4"] .post-style-3:nth-child(n + 5) {
+  border-top: 1px solid #e9ecef;
+}
+
+[data-elementor-columns="4"] .post-style-3:not(:nth-child(4n)) {
+  border-left: 1px solid #e9ecef;
+}
+
+[data-elementor-columns="6"] .post-style-3:nth-child(n + 7) {
+  border-top: 1px solid #e9ecef;
+}
+
+[data-elementor-columns="6"] .post-style-3:not(:nth-child(6n)) {
+  border-left: 1px solid #e9ecef;
+}
+
+.elementor-html .product-img-wrap + img {
+  display: none !important;
+}
+
+.elementor-html .site-content-contain {
+  z-index: 100;
+}
+
+.elementor-html .product-image.no-gallery {
+  display: none !important;
+}
+
+.elementor-progress-bar {
+  height: 100%;
+}
+
+.elementor-progress-outside .elementor-progress-percentage {
+  float: left;
+  padding-left: 0;
+}
+
+.elementor-progress-outside .elementor-progress-bar {
+  position: relative;
+}
+.elementor-progress-outside .elementor-progress-bar:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 3px solid #cf9147;
+}
+
+.elementor-search-form button,
+.elementor-search-form input[type="search"] {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  min-width: 0;
+  font-size: 15px;
+  -webkit-appearance: none;
+}
+
+.elementor-search-form button:focus,
+.elementor-search-form input[type="search"]:focus {
+  outline: 0;
+  color: inherit;
+}
+
+.elementor-search-form button {
+  background-color: #818a91;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 0;
+}
+
+.elementor-search-form__container {
+  display: -ms-flexbox;
+  display: flex;
+  transition: 0.2s;
+  overflow: hidden;
+  border: 0 solid transparent;
+  min-height: 50px;
+}
+
+.elementor-search-form__container:not(.elementor-search-form--full-screen) {
+  background: #eceeef;
+}
+
+.elementor-search-form__input {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  color: #55595c;
+  transition: color 0.2s;
+}
+
+.elementor-search-form__input::-webkit-input-placeholder {
+  color: inherit;
+  font-family: inherit;
+  opacity: 0.6;
+}
+
+.elementor-search-form__input:-ms-input-placeholder,
+.elementor-search-form__input::-ms-input-placeholder {
+  color: inherit;
+  font-family: inherit;
+  opacity: 0.6;
+}
+
+.elementor-search-form__input::placeholder {
+  color: inherit;
+  font-family: inherit;
+  opacity: 0.6;
+}
+
+.elementor-search-form__submit {
+  color: #fff;
+  transition: color 0.2s, background 0.2s;
+}
+
+.elementor-search-form--button-type-text .elementor-search-form__submit {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.elementor-search-form--skin-minimal .elementor-search-form__icon {
+  opacity: 0.6;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  color: #55595c;
+}
+
+.elementor-search-form--skin-full_screen .elementor-search-form input[type="search"].elementor-search-form__input {
+  font-size: 50px;
+  text-align: center;
+  border-style: solid;
+  border-width: 0 0 1px;
+  border-color: #fff;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.elementor-search-form--skin-full_screen .elementor-search-form__toggle {
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  color: #494c4f;
+}
+
+.elementor-search-form--skin-full_screen .elementor-search-form__toggle i {
+  position: relative;
+  display: block;
+  border: 0 solid;
+  transition: 0.2s;
+  width: 33px;
+  height: 33px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+}
+
+.elementor-search-form--skin-full_screen .elementor-search-form__toggle i:before {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  font-size: 0.55em;
+}
+
+.elementor-search-form--skin-full_screen .elementor-search-form__container {
+  transition: 0.3s;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  padding: 0 15%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.elementor-search-form--skin-full_screen .elementor-search-form__container:not(.elementor-search-form--full-screen) {
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.elementor-search-form--skin-full_screen .elementor-search-form__container:not(.elementor-search-form--full-screen) .dialog-lightbox-close-button {
+  display: none;
+}
+
+.column-item .services-inner {
+  position: relative;
+  margin-bottom: 60px;
+}
+.column-item .services-inner .entry-title {
+  margin-top: 1.875rem;
+  margin-bottom: 13px;
+}
+.column-item .services-inner .more-link {
+  font-size: 12px;
+  font-size: 0.75rem;
+  margin-top: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+body.single-osf_service .site-content {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+body.single-osf_service .entry-title {
+  font-size: 1.875rem;
+  line-height: 2.6875rem;
+  margin: 2rem 0 1rem;
+}
+
+article.type-osf_service {
+  padding: 0 15px;
+}
+article.type-osf_service .post-inner {
+  margin-bottom: 60px;
+}
+article.type-osf_service .entry-title {
+  margin-top: 1.875rem;
+  margin-bottom: 13px;
+}
+article.type-osf_service .more-link {
+  font-size: 12px;
+  font-size: 0.75rem;
+  margin-top: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.single-case_study .site-content {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.single-case_study .entry-content ul {
+  padding-right: 1.5em;
+}
+
+.single-case_study .entry-header {
+  padding: 1.5625rem 0;
+  margin-bottom: 2rem;
+}
+
+.single-case_study .entry-title {
+  font-size: 2.25rem;
+  margin-bottom: 0.375rem;
+  line-height: 3rem;
+}
+
+.single-case_study .entry-meta {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.single-case_study .entry-meta i {
+  margin-left: 5px;
+}
+.single-case_study .entry-meta i:not(:first-child) {
+  margin-right: 10px;
+}
+
+.single-case_study .information {
+  padding: 2.5rem;
+}
+@media (max-width: 767px) {
+  .single-case_study .information {
+    margin-top: 60px;
+  }
+}
+.single-case_study .information h4 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+.single-case_study .information ul {
+  padding-bottom: 1.375rem;
+  border-bottom: 4px solid #b3bdd1;
+}
+.single-case_study .information li .meta-label {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 3.125rem;
+  font-weight: 700;
+  min-width: 110px;
+  padding-left: 0.625rem;
+}
+
+.elementor-widget-tabs .elementor-widget-container .elementor-tabs-wrapper .elementor-tab-title {
+  margin-left: 40px;
+}
+
+.elementor-widget-tabs .elementor-widget-container .elementor-tab-title {
+  border: 0;
+}
+
+.elementor-widget-tabs.opal-tab-title-align-center .elementor-tabs-wrapper .elementor-tab-title {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.elementor-widget-tabs.opal-tab-title-align-right .elementor-tabs-wrapper .elementor-tab-title {
+  margin-right: 40px;
+  margin-left: 0;
+}
+
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tabs-wrapper {
+  border-bottom: 1px solid #eee;
+  overflow: visible;
+}
+@media (max-width: 767px) {
+  .elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tabs-wrapper {
+    display: block;
+  }
+  .elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tabs-wrapper .elementor-tab-title {
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title.elementor-active:after,
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title:after {
+  content: none;
+}
+
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title.elementor-active:hover:before,
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title:hover:before {
+  width: 100%;
+  right: 0;
+}
+
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title.elementor-active:before,
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  border: 0;
+  right: 50%;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background-color: #cf9147;
+  transition: all 0.3s ease;
+}
+
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title.elementor-active.elementor-active:before,
+.elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title.elementor-active:before {
+  width: 100%;
+  right: 0;
+}
+
+.blog .site-content .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .wrap,
+.elementor-element .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .gallery,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .blog .site-content .wrap,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .elementor-element .gallery,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .list-feature-box,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .opal-archive-style-3.archive .site-main,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .opal-archive-style-3.blog .site-main,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .opal-archive-style-4.archive .site-main,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .opal-archive-style-4.blog .site-main,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .opal-canvas-filter.top .opal-canvas-filter-wrap,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .woof_redraw_zone,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .opal-comment-form-2 .comment-form,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .opal-comment-form-3 .comment-form,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .opal-comment-form-4 .comment-form,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .opal-comment-form-6 .comment-form,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .opal-default-content-layout-2cr .site-content .wrap,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .osf-sorting,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .row,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .single-product.woocommerce-single-style-4 div.product .images .woocommerce-product-gallery__wrapper,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .single-product div.product,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .single .gallery,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .site-footer .widget-area,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .widget .gallery,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .woocommerce-account .entry-content > .woocommerce,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .woocommerce-account .entry-content > .woocommerce .u-columns.woocommerce-Addresses,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .woocommerce-address-fields__field-wrapper,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .woocommerce-Addresses,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .woocommerce-cart .woocommerce,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .woocommerce-columns--addresses,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .woocommerce-MyAccount-content form[class^="woocommerce-"],
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .woocommerce-single-style-5.single-product .site-main > .product,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .woocommerce .woocommerce-carousel,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 [data-elementor-columns],
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 [data-opal-columns],
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 body.archive .site-content .wrap,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 body.opal-content-layout-2cl #content .wrap,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 body.opal-content-layout-2cr #content .wrap,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 form.track_order,
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 ul.products,
+.opal-archive-style-3.archive .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .site-main,
+.opal-archive-style-3.blog .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .site-main,
+.opal-archive-style-4.archive .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .site-main,
+.opal-archive-style-4.blog .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .site-main,
+.opal-canvas-filter.top .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .opal-canvas-filter-wrap,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .woof_redraw_zone,
+.opal-comment-form-2 .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .comment-form,
+.opal-comment-form-3 .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .comment-form,
+.opal-comment-form-4 .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .comment-form,
+.opal-comment-form-6 .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .comment-form,
+.opal-default-content-layout-2cr .site-content .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .wrap,
+.single-product .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 div.product,
+.single-product.woocommerce-single-style-4 div.product .images .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .woocommerce-product-gallery__wrapper,
+.single-product div.product .woocommerce-product-gallery .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .flex-control-thumbs,
+.single .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .gallery,
+.site-footer .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .widget-area,
+.widget .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .gallery,
+.woocommerce-account .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .entry-content > .woocommerce,
+.woocommerce-account .entry-content > .woocommerce .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .u-columns.woocommerce-Addresses,
+.woocommerce-billing-fields .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .woocommerce-billing-fields__field-wrapper,
+.woocommerce-cart .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .woocommerce,
+.woocommerce-MyAccount-content .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 form[class^="woocommerce-"],
+.woocommerce-single-style-5.single-product .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .site-main > .product,
+.woocommerce .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .woocommerce-carousel,
+body.archive .site-content .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .wrap,
+body.opal-content-layout-2cl #content .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .wrap,
+body.opal-content-layout-2cr #content .elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .wrap {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .elementor-team-item {
+  position: relative;
+}
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .elementor-team-item:hover .elementor-team-details {
+  transform: translateY(0);
+  opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+  filter: alpha(opacity=100);
+  visibility: visible;
+}
+
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .elementor-team-image img {
+  margin: auto;
+}
+
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .elementor-team-details {
+  max-width: 280px;
+  min-height: 160px;
+  padding: 15px 40px;
+  margin: auto;
+  position: absolute;
+  bottom: 75px;
+  right: 0;
+  left: 0;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+  transform: translateY(100%);
+  opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: hidden;
+}
+
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .socials {
+  margin: 0;
+}
+.elementor-widget-opal-teams .elementor-teams-wrapper.style-3 .socials li {
+  list-style: none;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-left: 20px;
+}
+
+.elementor-teams-wrapper .socials {
+  margin: 0;
+}
+.elementor-teams-wrapper .socials li {
+  list-style: none;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-left: 20px;
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .elementor-teams-wrapper .socials li {
+    margin-left: 10px;
+  }
+}
+
+.elementor-teams-wrapper .elementor-team-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.elementor-teams-wrapper .elementor-team-image img {
+  margin: auto;
+}
+
+.elementor-teams-wrapper:not(.style-3) .elementor-team-item:hover .elementor-team-details {
+  transform: translateY(0);
+  opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+  filter: alpha(opacity=100);
+  visibility: visible;
+}
+
+.elementor-teams-wrapper:not(.style-3) .elementor-team-details {
+  max-width: 280px;
+  min-height: 160px;
+  padding: 15px 40px;
+  margin: auto;
+  position: absolute;
+  bottom: 75px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+  transform: translateY(100%);
+  opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: hidden;
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .elementor-teams-wrapper:not(.style-3) .elementor-team-details {
+    max-width: 200px;
+    min-height: 130px;
+    padding: 20px;
+  }
+}
+
+.elementor-teams-wrapper.style-2 {
+  position: relative;
+}
+.elementor-teams-wrapper.style-2 .elementor-team-item {
+  padding-top: 50px;
+}
+.elementor-teams-wrapper.style-2 .elementor-team-item:hover:after {
+  opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+  filter: alpha(opacity=100);
+  visibility: visible;
+}
+.elementor-teams-wrapper.style-2 .elementor-team-item:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+.elementor-teams-wrapper.style-2 .elementor-team-details {
+  background-color: hsla(0, 0%, 100%, 0.9) !important;
+}
+
+.elementor-teams-wrapper.style-3 img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.elementor-teams-wrapper.style-3 .elementor-team-image {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+  margin: 0 auto 30px;
+  transition: all 0.6s ease;
+}
+
+.elementor-teams-wrapper.style-3 .elementor-team-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background: rgba(207, 145, 71, 0.9);
+  opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: hidden;
+  transition: all 0.6s ease;
+  transform: rotateY(180deg);
+}
+
+.elementor-teams-wrapper.style-3 .socials li {
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.elementor-teams-wrapper.style-3:hover .elementor-team-image {
+  transform: rotateY(-180deg);
+  opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: hidden;
+}
+
+.elementor-teams-wrapper.style-3:hover .elementor-team-socials {
+  transform: rotateY(0deg);
+  opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+  filter: alpha(opacity=100);
+  visibility: visible;
+}
+
+.elementor-widget-opal-testimonials {
+  background: url(assets/images/quote.png) no-repeat;
+  background-position: 0% 80%;
+}
+.blog .site-content .elementor-widget-opal-testimonials .wrap,
+.elementor-element .elementor-widget-opal-testimonials .gallery,
+.elementor-widget-opal-testimonials .blog .site-content .wrap,
+.elementor-widget-opal-testimonials .elementor-element .gallery,
+.elementor-widget-opal-testimonials .list-feature-box,
+.elementor-widget-opal-testimonials .opal-archive-style-3.archive .site-main,
+.elementor-widget-opal-testimonials .opal-archive-style-3.blog .site-main,
+.elementor-widget-opal-testimonials .opal-archive-style-4.archive .site-main,
+.elementor-widget-opal-testimonials .opal-archive-style-4.blog .site-main,
+.elementor-widget-opal-testimonials .opal-canvas-filter.top .opal-canvas-filter-wrap,
+.elementor-widget-opal-testimonials .opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .woof_redraw_zone,
+.elementor-widget-opal-testimonials .opal-comment-form-2 .comment-form,
+.elementor-widget-opal-testimonials .opal-comment-form-3 .comment-form,
+.elementor-widget-opal-testimonials .opal-comment-form-4 .comment-form,
+.elementor-widget-opal-testimonials .opal-comment-form-6 .comment-form,
+.elementor-widget-opal-testimonials .opal-default-content-layout-2cr .site-content .wrap,
+.elementor-widget-opal-testimonials .osf-sorting,
+.elementor-widget-opal-testimonials .row,
+.elementor-widget-opal-testimonials .single-product.woocommerce-single-style-4 div.product .images .woocommerce-product-gallery__wrapper,
+.elementor-widget-opal-testimonials .single-product div.product,
+.elementor-widget-opal-testimonials .single-product div.product .woocommerce-product-gallery .flex-control-thumbs,
+.elementor-widget-opal-testimonials .single .gallery,
+.elementor-widget-opal-testimonials .site-footer .widget-area,
+.elementor-widget-opal-testimonials .widget .gallery,
+.elementor-widget-opal-testimonials .woocommerce-account .entry-content > .woocommerce,
+.elementor-widget-opal-testimonials .woocommerce-account .entry-content > .woocommerce .u-columns.woocommerce-Addresses,
+.elementor-widget-opal-testimonials .woocommerce-address-fields__field-wrapper,
+.elementor-widget-opal-testimonials .woocommerce-Addresses,
+.elementor-widget-opal-testimonials .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper,
+.elementor-widget-opal-testimonials .woocommerce-cart .woocommerce,
+.elementor-widget-opal-testimonials .woocommerce-columns--addresses,
+.elementor-widget-opal-testimonials .woocommerce-MyAccount-content form[class^="woocommerce-"],
+.elementor-widget-opal-testimonials .woocommerce-single-style-5.single-product .site-main > .product,
+.elementor-widget-opal-testimonials .woocommerce .woocommerce-carousel,
+.elementor-widget-opal-testimonials [data-elementor-columns],
+.elementor-widget-opal-testimonials [data-opal-columns],
+.elementor-widget-opal-testimonials body.archive .site-content .wrap,
+.elementor-widget-opal-testimonials body.opal-content-layout-2cl #content .wrap,
+.elementor-widget-opal-testimonials body.opal-content-layout-2cr #content .wrap,
+.elementor-widget-opal-testimonials form.track_order,
+.elementor-widget-opal-testimonials ul.products,
+.opal-archive-style-3.archive .elementor-widget-opal-testimonials .site-main,
+.opal-archive-style-3.blog .elementor-widget-opal-testimonials .site-main,
+.opal-archive-style-4.archive .elementor-widget-opal-testimonials .site-main,
+.opal-archive-style-4.blog .elementor-widget-opal-testimonials .site-main,
+.opal-canvas-filter.top .elementor-widget-opal-testimonials .opal-canvas-filter-wrap,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .elementor-widget-opal-testimonials .woof_redraw_zone,
+.opal-comment-form-2 .elementor-widget-opal-testimonials .comment-form,
+.opal-comment-form-3 .elementor-widget-opal-testimonials .comment-form,
+.opal-comment-form-4 .elementor-widget-opal-testimonials .comment-form,
+.opal-comment-form-6 .elementor-widget-opal-testimonials .comment-form,
+.opal-default-content-layout-2cr .site-content .elementor-widget-opal-testimonials .wrap,
+.single-product .elementor-widget-opal-testimonials div.product,
+.single-product.woocommerce-single-style-4 div.product .images .elementor-widget-opal-testimonials .woocommerce-product-gallery__wrapper,
+.single-product div.product .woocommerce-product-gallery .elementor-widget-opal-testimonials .flex-control-thumbs,
+.single .elementor-widget-opal-testimonials .gallery,
+.site-footer .elementor-widget-opal-testimonials .widget-area,
+.widget .elementor-widget-opal-testimonials .gallery,
+.woocommerce-account .elementor-widget-opal-testimonials .entry-content > .woocommerce,
+.woocommerce-account .entry-content > .woocommerce .elementor-widget-opal-testimonials .u-columns.woocommerce-Addresses,
+.woocommerce-billing-fields .elementor-widget-opal-testimonials .woocommerce-billing-fields__field-wrapper,
+.woocommerce-cart .elementor-widget-opal-testimonials .woocommerce,
+.woocommerce-MyAccount-content .elementor-widget-opal-testimonials form[class^="woocommerce-"],
+.woocommerce-single-style-5.single-product .elementor-widget-opal-testimonials .site-main > .product,
+.woocommerce .elementor-widget-opal-testimonials .woocommerce-carousel,
+body.archive .site-content .elementor-widget-opal-testimonials .wrap,
+body.opal-content-layout-2cl #content .elementor-widget-opal-testimonials .wrap,
+body.opal-content-layout-2cr #content .elementor-widget-opal-testimonials .wrap {
+  margin: 0;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-item.column-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.elementor-widget-opal-testimonials .entry-gallery .gallery .owl-dots,
+.elementor-widget-opal-testimonials .entry-gallery .woocommerce-product-carousel ul.products.gallery .owl-dots,
+.elementor-widget-opal-testimonials .entry-gallery .woocommerce .woocommerce-carousel ul.products.gallery .owl-dots,
+.elementor-widget-opal-testimonials .owl-theme.owl-carousel .owl-dots,
+.elementor-widget-opal-testimonials .woocommerce-product-carousel .entry-gallery ul.products.gallery .owl-dots,
+.elementor-widget-opal-testimonials .woocommerce-product-carousel ul.owl-theme.products .owl-dots,
+.elementor-widget-opal-testimonials .woocommerce .woocommerce-carousel .entry-gallery ul.products.gallery .owl-dots,
+.elementor-widget-opal-testimonials .woocommerce .woocommerce-carousel ul.owl-theme.products .owl-dots,
+.entry-gallery .elementor-widget-opal-testimonials .gallery .owl-dots,
+.entry-gallery .woocommerce-product-carousel .elementor-widget-opal-testimonials ul.products.gallery .owl-dots,
+.entry-gallery .woocommerce .woocommerce-carousel .elementor-widget-opal-testimonials ul.products.gallery .owl-dots,
+.woocommerce-product-carousel .elementor-widget-opal-testimonials ul.owl-theme.products .owl-dots,
+.woocommerce-product-carousel .entry-gallery .elementor-widget-opal-testimonials ul.products.gallery .owl-dots,
+.woocommerce .woocommerce-carousel .elementor-widget-opal-testimonials ul.owl-theme.products .owl-dots,
+.woocommerce .woocommerce-carousel .entry-gallery .elementor-widget-opal-testimonials ul.products.gallery .owl-dots {
+  text-align: right;
+  padding: 0 20px;
+}
+.elementor-widget-opal-testimonials img {
+  display: block;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.elementor-testimonial-text-align-center .owl-dots {
+  text-align: center;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.elementor-testimonial-text-align-center .owl-dots .owl-dot {
+  margin-right: 10px;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.elementor-testimonial-text-align-right .owl-dots {
+  text-align: left;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.elementor-testimonial-text-align-right .owl-dots .owl-dot {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_1.elementor-testimonial-text-align-center .elementor-testimonial-image {
+  justify-content: center;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_1.elementor-testimonial-text-align-center .elementor-testimonial-details:before {
+  left: 0;
+  margin: auto;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_1.elementor-testimonial-text-align-right .elementor-testimonial-image {
+  justify-content: flex-end;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_1.elementor-testimonial-text-align-right .elementor-testimonial-details:before {
+  left: 0;
+  right: auto;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_1 .elementor-testimonial-meta-inner {
+  display: block;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_1 .elementor-testimonial-image {
+  display: flex;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_1 .elementor-testimonial-content,
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_1 .elementor-testimonial-image img {
+  margin-bottom: 2.5rem;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_1 .elementor-testimonial-details {
+  padding-top: 2rem;
+  position: relative;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_1 .elementor-testimonial-details:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 2rem;
+  height: 1px;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_2.elementor-testimonial-text-align-center .elementor-testimonial-meta-inner {
+  justify-content: center;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_2.elementor-testimonial-text-align-left .elementor-testimonial-meta-inner {
+  justify-content: flex-start;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_2.elementor-testimonial-text-align-right .elementor-testimonial-meta-inner {
+  justify-content: flex-end;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_2 .elementor-testimonial-meta-inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_2 .elementor-testimonial-content {
+  margin-bottom: 2.5rem;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_2 .elementor-testimonial-image img {
+  margin-left: 1rem;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_3.elementor-testimonial-text-align-center .elementor-testimonial-image {
+  justify-content: center;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_3.elementor-testimonial-text-align-center .elementor-testimonial-image:before {
+  left: 0;
+  margin: auto;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_3.elementor-testimonial-text-align-right .elementor-testimonial-image {
+  justify-content: flex-end;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_3.elementor-testimonial-text-align-right .elementor-testimonial-image:before {
+  left: 0;
+  right: auto;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_3 .elementor-testimonial-content {
+  margin-bottom: 2.5rem;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_3 .elementor-testimonial-image {
+  padding-top: 2rem;
+  margin-bottom: 1.3rem;
+  position: relative;
+  display: flex;
+}
+.elementor-widget-opal-testimonials .elementor-testimonial-wrapper.layout_3 .elementor-testimonial-image:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 2rem;
+  height: 1px;
+}
+
+.elementor-text-editor ul {
+  margin-right: 1em;
+}
+
+.blog .site-content .elementor-text_carousel-wrapper .wrap,
+.elementor-element .elementor-text_carousel-wrapper .gallery,
+.elementor-text_carousel-wrapper .blog .site-content .wrap,
+.elementor-text_carousel-wrapper .elementor-element .gallery,
+.elementor-text_carousel-wrapper .list-feature-box,
+.elementor-text_carousel-wrapper .opal-archive-style-3.archive .site-main,
+.elementor-text_carousel-wrapper .opal-archive-style-3.blog .site-main,
+.elementor-text_carousel-wrapper .opal-archive-style-4.archive .site-main,
+.elementor-text_carousel-wrapper .opal-archive-style-4.blog .site-main,
+.elementor-text_carousel-wrapper .opal-canvas-filter.top .opal-canvas-filter-wrap,
+.elementor-text_carousel-wrapper .opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .woof_redraw_zone,
+.elementor-text_carousel-wrapper .opal-comment-form-2 .comment-form,
+.elementor-text_carousel-wrapper .opal-comment-form-3 .comment-form,
+.elementor-text_carousel-wrapper .opal-comment-form-4 .comment-form,
+.elementor-text_carousel-wrapper .opal-comment-form-6 .comment-form,
+.elementor-text_carousel-wrapper .opal-default-content-layout-2cr .site-content .wrap,
+.elementor-text_carousel-wrapper .osf-sorting,
+.elementor-text_carousel-wrapper .row,
+.elementor-text_carousel-wrapper .single-product.woocommerce-single-style-4 div.product .images .woocommerce-product-gallery__wrapper,
+.elementor-text_carousel-wrapper .single-product div.product,
+.elementor-text_carousel-wrapper .single-product div.product .woocommerce-product-gallery .flex-control-thumbs,
+.elementor-text_carousel-wrapper .single .gallery,
+.elementor-text_carousel-wrapper .site-footer .widget-area,
+.elementor-text_carousel-wrapper .widget .gallery,
+.elementor-text_carousel-wrapper .woocommerce-account .entry-content > .woocommerce,
+.elementor-text_carousel-wrapper .woocommerce-account .entry-content > .woocommerce .u-columns.woocommerce-Addresses,
+.elementor-text_carousel-wrapper .woocommerce-address-fields__field-wrapper,
+.elementor-text_carousel-wrapper .woocommerce-Addresses,
+.elementor-text_carousel-wrapper .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper,
+.elementor-text_carousel-wrapper .woocommerce-cart .woocommerce,
+.elementor-text_carousel-wrapper .woocommerce-columns--addresses,
+.elementor-text_carousel-wrapper .woocommerce-MyAccount-content form[class^="woocommerce-"],
+.elementor-text_carousel-wrapper .woocommerce-single-style-5.single-product .site-main > .product,
+.elementor-text_carousel-wrapper .woocommerce .woocommerce-carousel,
+.elementor-text_carousel-wrapper [data-elementor-columns],
+.elementor-text_carousel-wrapper [data-opal-columns],
+.elementor-text_carousel-wrapper body.archive .site-content .wrap,
+.elementor-text_carousel-wrapper body.opal-content-layout-2cl #content .wrap,
+.elementor-text_carousel-wrapper body.opal-content-layout-2cr #content .wrap,
+.elementor-text_carousel-wrapper form.track_order,
+.elementor-text_carousel-wrapper ul.products,
+.opal-archive-style-3.archive .elementor-text_carousel-wrapper .site-main,
+.opal-archive-style-3.blog .elementor-text_carousel-wrapper .site-main,
+.opal-archive-style-4.archive .elementor-text_carousel-wrapper .site-main,
+.opal-archive-style-4.blog .elementor-text_carousel-wrapper .site-main,
+.opal-canvas-filter.top .elementor-text_carousel-wrapper .opal-canvas-filter-wrap,
+.opal-canvas-filter.top .opal-canvas-filter-wrap section.WOOF_Widget .elementor-text_carousel-wrapper .woof_redraw_zone,
+.opal-comment-form-2 .elementor-text_carousel-wrapper .comment-form,
+.opal-comment-form-3 .elementor-text_carousel-wrapper .comment-form,
+.opal-comment-form-4 .elementor-text_carousel-wrapper .comment-form,
+.opal-comment-form-6 .elementor-text_carousel-wrapper .comment-form,
+.opal-default-content-layout-2cr .site-content .elementor-text_carousel-wrapper .wrap,
+.single-product .elementor-text_carousel-wrapper div.product,
+.single-product.woocommerce-single-style-4 div.product .images .elementor-text_carousel-wrapper .woocommerce-product-gallery__wrapper,
+.single-product div.product .woocommerce-product-gallery .elementor-text_carousel-wrapper .flex-control-thumbs,
+.single .elementor-text_carousel-wrapper .gallery,
+.site-footer .elementor-text_carousel-wrapper .widget-area,
+.widget .elementor-text_carousel-wrapper .gallery,
+.woocommerce-account .elementor-text_carousel-wrapper .entry-content > .woocommerce,
+.woocommerce-account .entry-content > .woocommerce .elementor-text_carousel-wrapper .u-columns.woocommerce-Addresses,
+.woocommerce-billing-fields .elementor-text_carousel-wrapper .woocommerce-billing-fields__field-wrapper,
+.woocommerce-cart .elementor-text_carousel-wrapper .woocommerce,
+.woocommerce-MyAccount-content .elementor-text_carousel-wrapper form[class^="woocommerce-"],
+.woocommerce-single-style-5.single-product .elementor-text_carousel-wrapper .site-main > .product,
+.woocommerce .elementor-text_carousel-wrapper .woocommerce-carousel,
+body.archive .site-content .elementor-text_carousel-wrapper .wrap,
+body.opal-content-layout-2cl #content .elementor-text_carousel-wrapper .wrap,
+body.opal-content-layout-2cr #content .elementor-text_carousel-wrapper .wrap {
+  margin: 0;
+}
+
+.elementor-widget-opal-text_carousel .entry-gallery .gallery .elementor-heading-title,
+.elementor-widget-opal-text_carousel .owl-carousel .elementor-heading-title,
+.elementor-widget-opal-text_carousel .woocommerce-product-carousel ul.products .elementor-heading-title,
+.elementor-widget-opal-text_carousel .woocommerce .woocommerce-carousel ul.products .elementor-heading-title,
+.entry-gallery .elementor-widget-opal-text_carousel .gallery .elementor-heading-title,
+.woocommerce-product-carousel .elementor-widget-opal-text_carousel ul.products .elementor-heading-title,
+.woocommerce .woocommerce-carousel .elementor-widget-opal-text_carousel ul.products .elementor-heading-title {
+  margin-bottom: 0;
+}
+
+.elementor-widget-opal-text_carousel .entry-gallery .gallery .elementor-content,
+.elementor-widget-opal-text_carousel .owl-carousel .elementor-content,
+.elementor-widget-opal-text_carousel .woocommerce-product-carousel ul.products .elementor-content,
+.elementor-widget-opal-text_carousel .woocommerce .woocommerce-carousel ul.products .elementor-content,
+.entry-gallery .elementor-widget-opal-text_carousel .gallery .elementor-content,
+.woocommerce-product-carousel .elementor-widget-opal-text_carousel ul.products .elementor-content,
+.woocommerce .woocommerce-carousel .elementor-widget-opal-text_carousel ul.products .elementor-content {
+  padding-top: 10px;
+}
+
+.elementor-toggle-item:last-child .elementor-tab-title {
+  border: 0;
+}
+
+.elementor-video-popup {
+  position: relative;
+  transition: all 0.3s ease;
+}
+.elementor-video-popup:after {
+  position: absolute;
+  content: "";
+  top: -40px;
+  right: -40px;
+  width: calc(100% + 80px);
+  height: calc(100% + 80px);
+  background-color: rgba(207, 145, 71, 0.2);
+  transform: scale(0);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.elementor-video-popup i {
+  font-size: 28px;
+  font-size: 1.75rem;
+  color: #fff;
+  background-color: #cf9147;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.elementor-video-popup:hover:after {
+  transform: scale(1);
+}
+
+.elementor-widget ul.menu {
+  margin: 0;
+  list-style: none;
+}
+.elementor-widget ul.menu ul {
+  list-style: none;
+}
+
+.elementor-widget.elementor-widget-wp-widget-recent-posts {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 30px;
+}
+.elementor-widget.elementor-widget-wp-widget-recent-posts ul {
+  margin: 0;
+  list-style: none;
+}
+.elementor-widget.elementor-widget-wp-widget-recent-posts a {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+.elementor-widget.elementor-widget-wp-widget-recent-posts .post-content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.elementor-widget .elementor-text-editor p:last-child {
+  margin-bottom: 0;
+}
+
+#secondary .elementor-widget-container h5:first-of-type {
+  font-size: 18px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#secondary .elementor-widget-wp-widget-recent-posts {
+  font-size: 16px;
+  font-size: 1rem;
+}
+#secondary .elementor-widget-wp-widget-recent-posts a {
+  font-weight: 400;
+}
+#secondary .elementor-widget-wp-widget-recent-posts li {
+  border-color: #e0e2e6;
+}
+
+#secondary .elementor-nav-menu--layout-vertical ul li {
+  padding-bottom: 0;
+  padding-top: 0;
+  border-color: hsla(0, 0%, 100%, 0.2);
+}
+
+#secondary .elementor-widget-wp-widget-categories .elementor-widget-container h5:first-of-type {
+  font-size: 30px;
+  font-size: 1.875rem;
+  color: #fff;
+  line-height: 40px;
+  border-bottom: 3px solid hsla(0, 0%, 100%, 0.2);
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  letter-spacing: -0.5px;
+}
+
+#secondary .elementor-widget-wp-widget-categories li {
+  border-color: hsla(0, 0%, 100%, 0.2);
+}
+
+#secondary .elementor-widget-wp-widget-categories a {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #b3bdd1;
+  display: block;
+  letter-spacing: -0.5px;
+}
+#secondary .elementor-widget-wp-widget-categories a:before {
+  content: "";
+  width: 0;
+  height: 7px;
+  margin: 0;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+#secondary .elementor-widget-wp-widget-categories a.elementor-item-active,
+#secondary .elementor-widget-wp-widget-categories a:hover {
+  color: #fff;
+}
+#secondary .elementor-widget-wp-widget-categories a.elementor-item-active:before,
+#secondary .elementor-widget-wp-widget-categories a:hover:before {
+  width: 7px;
+  margin-left: 10px;
+}
+
+.elementor-widget-social-icons .elementor-social-icons-wrapper {
+  line-height: inherit;
+  font-size: inherit;
+}
+
+/* endinject */

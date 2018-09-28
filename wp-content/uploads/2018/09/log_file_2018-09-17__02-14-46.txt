@@ -1,0 +1,62 @@
+
+---Downloaded files---
+The import files for: Base Import were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://localhost/naninhome
+Data file = /Users/h000953/public_html/naninhome/wp-content/plugins/fridominimal-core/dummy-data/content.xml
+Widget file = /Users/h000953/public_html/naninhome/wp-content/uploads/2018/09/demo-widgets-import-file_2018-09-17__02-14-46.json
+Customizer file = /Users/h000953/public_html/naninhome/wp-content/uploads/2018/09/demo-customizer-import-file_2018-09-17__02-14-46.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+[WARNING] Failed to import elementor_font_type custom
+[WARNING] Failed to import "neuehanskendrick": Invalid post type elementor_font
+
+
+------
+New AJAX call!
+[WARNING] Failed to import elementor_font_type custom
+[WARNING] Failed to import "neuehanskendrick": Invalid post type elementor_font
+
+
+---Importing widgets---
+Woocommerce Shop : 
+
+Product Categories - Product categories - Imported
+OSF Filter Products by Attribute - Filter by size - Imported
+OSF Filter Products by Attribute - Filter by color - Imported
+Product Brands - Product Brands - Imported
+Filter Products by Price - Filter by price - Imported
+Opal Elementor Template - No Title - Imported
+
+Woocommerce Shop Filters : 
+
+Product Categories - Product categories - Imported
+OSF Filter Products by Attribute - Filter by size - Imported
+OSF Filter Products by Attribute - Filter by color - Imported
+Product Brands - Product Brands - Imported
+Filter Products by Price - Filter by price - Imported
+
+Blog Sidebar : 
+
+Search - No Title - Imported
+Recent Posts - No Title - Imported
+Recent Comments - No Title - Imported
+Archives - No Title - Imported
+Categories - No Title - Imported
+Meta - No Title - Imported
+
+Footer 1 : 
+
+MailChimp Sign-Up Form - No Title - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---pt-ocdi/after_import---
+

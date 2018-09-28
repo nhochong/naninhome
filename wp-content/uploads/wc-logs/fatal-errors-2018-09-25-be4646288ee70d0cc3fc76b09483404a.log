@@ -1,0 +1,6 @@
+2018-09-25T06:43:42+00:00 CRITICAL Cannot access empty property
+
+2018-09-25T06:49:46+00:00 CRITICAL Call to undefined function fastcgi_finish_request()
+
+2018-09-25T06:49:47+00:00 CRITICAL Call to undefined function fastcgi_finish_request()
+
