@@ -66,6 +66,16 @@ class OSF_Elementor_Post_Grid extends Elementor\Widget_Base {
         );
 
         $this->add_control(
+            'categories',
+            [
+                'label'    => __('Categories', 'fridominimal-core'),
+                'type'     => Controls_Manager::SELECT2,
+                'options'  => $this->get_post_categories(),
+                'multiple' => true,
+            ]
+        );
+
+        $this->add_control(
             'orderby',
             [
                 'label'   => __('Order By', 'fridominimal-core'),
@@ -90,6 +100,17 @@ class OSF_Elementor_Post_Grid extends Elementor\Widget_Base {
                     'asc'  => __('ASC', 'fridominimal-core'),
                     'desc' => __('DESC', 'fridominimal-core'),
                 ],
+            ]
+        );
+
+        $this->add_control(
+            'show_cat',
+            [
+                'label' => __('Show category', 'fridominimal-core'),
+                'type' => Controls_Manager::SWITCHER,
+                'label_on' => __('On', 'fridominimal-core'),
+                'label_off' => __('Off', 'fridominimal-core'),
+                'default' => '',
             ]
         );
 
@@ -341,7 +362,20 @@ class OSF_Elementor_Post_Grid extends Elementor\Widget_Base {
         $this->end_controls_section();
     }
 
-
+    protected function get_post_categories() {
+        $categories = get_terms(array(
+                'taxonomy'   => 'category',
+                'hide_empty' => false,
+            )
+        );
+        $results    = array();
+        if (!is_wp_error($categories)) {
+            foreach ($categories as $category) {
+                $results[$category->term_id] = $category->name;
+            }
+        }
+        return $results;
+    }
 
     public static function get_query_args($control_id, $settings) {
         $defaults = [
@@ -373,6 +407,10 @@ class OSF_Elementor_Post_Grid extends Elementor\Widget_Base {
         $query_args['post_type']      = 'post';
         $query_args['posts_per_page'] = $settings['posts_per_page'];
         $query_args['tax_query']      = [];
+
+        if (!empty($settings['categories'])) {
+            $query_args['cat']     = implode(',', $settings['categories']);
+        }
 
         if (is_front_page()) {
             $query_args['paged'] = (get_query_var('page')) ? get_query_var('page') : 1;
@@ -514,7 +552,12 @@ class OSF_Elementor_Post_Grid extends Elementor\Widget_Base {
 
         $this->add_render_attribute('wrapper', 'class', 'elementor-post-wrapper');
 //        $this->add_render_attribute('wrapper', 'class', $settings['style']);
-        $this->add_render_attribute('row', 'class', 'row');
+        if($settings['show_cat']){
+            $this->add_render_attribute('row', 'class', 'row');
+        }else{
+            $this->add_render_attribute('row', 'class', 'row hide_category');
+        }
+
         if (!empty($settings['column'])) {
             $this->add_render_attribute('row', 'data-elementor-columns', $settings['column']);
         }
