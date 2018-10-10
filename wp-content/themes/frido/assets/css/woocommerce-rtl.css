@@ -6357,7 +6357,7 @@ body.opal-filter-loading #content * {
 
 @media screen and (max-width: 48em) {
   .opal-wrapper {
-    margin-bottom: 65px;
+    /*margin-bottom: 65px;*/
   }
   .handheld-footer-bar {
     position: fixed;

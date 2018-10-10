@@ -27,3 +27,10 @@ if (!class_exists('FridominimalCore') ) {
     // Blog Sidebar
     require get_theme_file_path('inc/class-sidebar.php');
 }
+
+function add_coccoc_alo_phone() {
+
+    wp_enqueue_style( 'coccoc-alo-style', get_stylesheet_directory_uri() . '/assets/css/coccoc_alo.css', 'all');
+}
+
+add_action( 'wp_enqueue_scripts', 'add_coccoc_alo_phone' );

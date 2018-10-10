@@ -128,7 +128,7 @@ if (!class_exists('osf_WooCommerce')) :
 //            add_action('wp_ajax_osf_ajax_loadmore_products', array($this, 'products_load_more'));
 //            add_action('wp_ajax_nopriv_osf_ajax_loadmore_products', array($this, 'products_load_more'));
 
-            add_action('wp_footer', array($this, 'mobile_handheld_footer_bar'));
+//            add_action('wp_footer', array($this, 'mobile_handheld_footer_bar'));
         }
 
         public function mobile_handheld_footer_bar() {
